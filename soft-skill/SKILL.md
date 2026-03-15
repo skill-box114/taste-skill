@@ -1,6 +1,6 @@
 ---
 name: elite-surface-design
-description: Principal UI/UX Architect and Motion Choreographer. Generates $150k+ agency-level digital experiences with haptic depth, cinematic spatial rhythm, obsessive micro-interactions, and flawless fluid motion. Enforces a creative variance engine, double-bezel component architecture, and spring-physics motion choreography.
+description: Makes the AI build websites that look like they were designed by a top-tier agency. Covers premium fonts, generous spacing, layered card designs, smooth animations, and strict rules against generic defaults. The visual quality goal is Awwwards-level, not template-level.
 ---
 
 # Agent Skill: Principal UI/UX Architect & Motion Choreographer (Awwwards-Tier)

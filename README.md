@@ -21,7 +21,7 @@ The main design skill. Teaches the AI how to write good-looking frontend code fr
 For upgrading existing projects. Instead of rebuilding from zero, this skill walks the AI through auditing what's already there and fixing the biggest design problems first.
 
 ### 3. soft-skill
-Enforces an ultra-premium, agency-tier visual language. Defines strict rules for bespoke typography, macro-whitespace, bento-box layouts, squircle micro-componentry, and haptic depth. Bans generic defaults to guarantee a high-end, non-templated aesthetic.
+Focuses on making things look and feel expensive. Covers premium fonts, big breathing whitespace, layered card designs with depth, smooth spring-based animations, and floating navigation. Bans all the generic defaults that make AI output look like a template.
 
 ### 4. output-skill
 Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks, and half-finished outputs. Forces the AI to actually write everything instead of cutting corners.
