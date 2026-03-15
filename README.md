@@ -12,7 +12,7 @@ I'd love to hear your thoughts! If you have suggestions or find any bugs:
 
 ## Skills
 
-There are three skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
+There are four skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
 
 ### 1. taste-skill
 The main design skill. Teaches the AI how to write good-looking frontend code from scratch. Covers layout, typography, colors, spacing, motion, and overall visual quality.
@@ -20,7 +20,10 @@ The main design skill. Teaches the AI how to write good-looking frontend code fr
 ### 2. redesign-skill
 For upgrading existing projects. Instead of rebuilding from zero, this skill walks the AI through auditing what's already there and fixing the biggest design problems first.
 
-### 3. output-skill
+### 3. soft-skill
+Enforces an ultra-premium, agency-tier visual language. Defines strict rules for bespoke typography, macro-whitespace, bento-box layouts, squircle micro-componentry, and haptic depth. Bans generic defaults to guarantee a high-end, non-templated aesthetic.
+
+### 4. output-skill
 Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks, and half-finished outputs. Forces the AI to actually write everything instead of cutting corners.
 
 ## How to Use
