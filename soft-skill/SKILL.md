@@ -1,6 +1,6 @@
 ---
-name: elite-surface-design
-description: Makes the AI build websites that look like they were designed by a top-tier agency. Covers premium fonts, generous spacing, layered card designs, smooth animations, and strict rules against generic defaults. The visual quality goal is Awwwards-level, not template-level.
+name: high-end-visual-design
+description: Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.
 ---
 
 # Agent Skill: Principal UI/UX Architect & Motion Choreographer (Awwwards-Tier)
