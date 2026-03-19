@@ -67,6 +67,15 @@ Created with taste-skill:
   <img src="examples/floria-bottom.webp" width="400" />
 </p>
 
+## Support the project
+
+If you find **taste-skill** useful, consider sponsoring the development. 
+
+[Sponsor on GitHub](https://github.com)
+
+### Current Sponsors
+- *Your name could be here!*
+
 ## Research
 
 Background research that informed how these skills were built. See the [research](research/) folder.
