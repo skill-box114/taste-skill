@@ -12,7 +12,7 @@ I'd love to hear your thoughts! If you have suggestions or find any bugs:
 
 ## Skills
 
-There are five skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
+There are six skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
 
 ### 1. taste-skill
 The main design skill. Teaches the AI how to write good-looking frontend code from scratch. Covers layout, typography, colors, spacing, motion, and overall visual quality.
@@ -28,6 +28,9 @@ Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks
 
 ### 5. minimalist-skill
 For clean, editorial-style interfaces inspired by tools like Notion and Linear. Enforces warm monochrome palettes, serif/sans-serif typographic contrast, massive whitespace, flat bento grids with crisp hairline borders, and muted pastel accents. Blocks gradients, heavy shadows, and generic SaaS patterns.
+
+### 6. brutalist-skill
+Raw mechanical interfaces fusing Swiss typographic print with CRT terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, and analog degradation effects like halftones, scanlines, and dithering. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.
 
 ## How to Use
 
