@@ -29,8 +29,11 @@ A restrained, gallery-airy interface with confident asymmetric layouts and fluid
 - **Display:** `Geist`, `Satoshi`, `Cabinet Grotesk`, or `Outfit` — Track-tight (`-0.025em`), controlled fluid scale, weight-driven hierarchy (700–900). Not screaming. Leading compressed (`1.1`). Alternatives forced — `Inter` is BANNED for premium contexts
 - **Body:** Same family at weight 400 — Relaxed leading (`1.65`), 65ch max-width, Steel Secondary color (#71717A)
 - **Mono:** `Geist Mono` or `JetBrains Mono` — For code blocks, metadata, timestamps. When density exceeds Level 7, all numbers switch to monospace
-- **Serif:** `Playfair Display` or similar — ONLY for creative/editorial. NEVER in dashboards or software UIs
 - **Scale:** Display at `clamp(2.25rem, 5vw, 3.75rem)`. Body at `1rem/1.125rem`. Mono metadata at `0.8125rem`
+
+### Banned Fonts
+- `Inter` — banned everywhere in premium/creative contexts
+- Generic serif fonts (`Times New Roman`, `Georgia`, `Garamond`, `Palatino`) — BANNED. If serif is needed for editorial/creative, use only distinctive modern serifs like `Fraunces`, `Gambarino`, `Editorial New`, or `Instrument Serif`. Never use default browser serif stacks. Serif is always BANNED in dashboards or software UIs regardless
 
 ## 4. Component Stylings
 * **Buttons:** Flat surface, no outer glow. Primary: accent fill with white text. Secondary: ghost/outline. Active state: `-1px translateY` or `scale(0.98)` for tactile push. Hover: subtle background shift, never glow
@@ -41,16 +44,34 @@ A restrained, gallery-airy interface with confident asymmetric layouts and fluid
 * **Empty States:** Composed illustration or icon composition with guidance text. Never just "No data found"
 * **Error States:** Inline, contextual. Red accent underline or border. Clear recovery action
 
-## 5. Layout Principles
+## 5. Hero Section
+The Hero is the first impression — it must be striking, creative, and never generic.
+- **Inline Image Typography:** Embed small, contextual photos or visuals directly between words or letters in the headline. Example: "We build [photo of hands typing] digital [photo of screen] products" — images sit inline at type-height, rounded, acting as visual punctuation between words. This is the signature creative technique
+- **No Overlapping Elements:** Text must never overlap images or other text. Every element has its own clear spatial zone. No z-index stacking of content layers, no absolute-positioned headlines over images. Clean separation always
+- **No Filler Text:** "Scroll to explore", "Swipe down", scroll arrow icons, bouncing chevrons, and any instructional UI chrome are BANNED. The user knows how to scroll. Let the content pull them in naturally
+- **Asymmetric Structure:** Centered Hero layouts are BANNED at this variance level. Use Split Screen (50/50), Left-Aligned text / Right visual, or Asymmetric Whitespace with large empty zones
+- **CTA Restraint:** Maximum one primary CTA button. No secondary "Learn more" links. No redundant micro-copy below the headline
+
+## 6. Layout Principles
 - **Grid-First:** CSS Grid for all structural layouts. Never flexbox percentage math (`calc(33% - 1rem)` is BANNED)
-- **Asymmetric Hero:** Centered Hero sections BANNED for this variance level. Force Split Screen (50/50), Left-Aligned content / Right visual, or Asymmetric Whitespace
+- **No Overlapping:** Elements must never overlap each other. No absolute-positioned layers stacking content on content. Every element occupies its own grid cell or flow position. Clean, separated spatial zones
 - **Feature Sections:** The "3 equal cards in a row" pattern is BANNED. Use 2-column Zig-Zag, asymmetric Bento grids (2fr 1fr 1fr), or horizontal scroll galleries
 - **Containment:** All content within `max-width: 1400px`, centered. Generous horizontal padding (`1rem` mobile, `2rem` tablet, `4rem` desktop)
 - **Full-Height:** Use `min-height: 100dvh` — never `height: 100vh` (iOS Safari address bar jump)
-- **Responsive:** Aggressive single-column collapse below 768px. All asymmetric layouts revert to `width: 100%`, `padding: 1rem 1rem`, `2rem` vertical gaps. No horizontal scroll on mobile
 - **Bento Architecture:** For feature grids, use Row 1: 3 columns | Row 2: 2 columns (70/30 split). Each tile contains a perpetual micro-animation
 
-## 6. Motion & Interaction
+## 7. Responsive Rules
+Every screen must work flawlessly across all viewports. These are non-negotiable:
+- **Mobile-First Collapse (< 768px):** All multi-column layouts collapse to a strict single column. `width: 100%`, `padding: 1rem`, `gap: 1.5rem`. No exceptions
+- **No Horizontal Scroll:** Horizontal overflow on mobile is a critical failure. All elements must fit within viewport width
+- **Typography Scaling:** Headlines scale down gracefully via `clamp()`. Body text stays `1rem` minimum. Never shrink body below `14px`
+- **Touch Targets:** All interactive elements minimum `44px` tap target. Generous spacing between clickable items
+- **Image Behavior:** Hero and inline images scale proportionally. Inline typography images (photos between words) stack below the headline on mobile instead of inline
+- **Navigation:** Desktop horizontal nav collapses to a clean mobile menu (slide-in or full-screen overlay). No tiny hamburger icons without labels
+- **Cards & Grids:** Bento grids and asymmetric layouts revert to stacked single-column cards with full-width. Maintain internal padding (`1rem`)
+- **Spacing Consistency:** Vertical section gaps reduce proportionally on mobile (`clamp(3rem, 8vw, 6rem)`). Never cramped, never excessively airy
+
+## 8. Motion & Interaction
 - **Physics Engine:** Spring-based exclusively. `stiffness: 100, damping: 20`. No linear easing anywhere. Premium, weighty feel on all interactive elements
 - **Perpetual Micro-Loops:** Every active dashboard component has an infinite-loop state — Pulse on status dots, Typewriter on search bars, Float on feature icons, Shimmer on loading states
 - **Staggered Orchestration:** Lists and grids mount with cascaded delays (`animation-delay: calc(var(--index) * 100ms)`). Waterfall reveals, never instant mount
@@ -58,16 +79,19 @@ A restrained, gallery-airy interface with confident asymmetric layouts and fluid
 - **Hardware Rules:** Animate ONLY `transform` and `opacity`. Never `top`, `left`, `width`, `height`. Grain/noise filters on fixed, pointer-events-none pseudo-elements only
 - **Performance:** CPU-heavy perpetual animations isolated in microscopic leaf components. Never trigger parent re-renders. Target 60fps minimum
 
-## 7. Anti-Patterns (Banned)
+## 9. Anti-Patterns (Banned)
 - No emojis — anywhere in UI, code, or alt text
 - No `Inter` font — use `Geist`, `Outfit`, `Cabinet Grotesk`, `Satoshi`
+- No generic serif fonts (`Times New Roman`, `Georgia`, `Garamond`) — if serif is needed, use distinctive modern serifs only (`Fraunces`, `Instrument Serif`)
 - No pure black (`#000000`) — Off-Black or Zinc-950 only
 - No neon outer glows or default box-shadow glows
 - No oversaturated accent colors above 80%
 - No excessive gradient text on large headers
 - No custom mouse cursors
+- No overlapping elements — text never overlaps images or other content. Clean spatial separation always
 - No 3-column equal card layouts for features
 - No centered Hero sections (at this variance level)
+- No filler UI text: "Scroll to explore", "Swipe down", "Discover more below", scroll arrows, bouncing chevrons — all BANNED
 - No generic names: "John Doe", "Sarah Chan", "Acme", "Nexus", "SmartFlow"
 - No fake round numbers: `99.99%`, `50%`, `1234567` — use organic data: `47.2%`, `+1 (312) 847-1928`
 - No AI copywriting clichés: "Elevate", "Seamless", "Unleash", "Next-Gen", "Revolutionize"
