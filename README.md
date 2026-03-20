@@ -12,7 +12,7 @@ I'd love to hear your thoughts! If you have suggestions or find any bugs:
 
 ## Skills
 
-There are six skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
+There are seven skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
 
 ### 1. taste-skill
 The main design skill. Teaches the AI how to write good-looking frontend code from scratch. Covers layout, typography, colors, spacing, motion, and overall visual quality.
@@ -31,6 +31,9 @@ For clean, editorial-style interfaces inspired by tools like Notion and Linear. 
 
 ### 6. brutalist-skill
 Raw mechanical interfaces fusing Swiss typographic print with CRT terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, and analog degradation effects like halftones, scanlines, and dithering. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.
+
+### 7. stitch-skill
+Google Stitch-compatible semantic design system. Converts the taste-skill's anti-slop engineering directives into Stitch's native `DESIGN.md` format — descriptive natural-language rules paired with precise hex values that Stitch's AI agent interprets to generate premium, non-generic interfaces. Includes the SKILL.md agent instructions and a ready-to-import DESIGN.md file.
 
 ## How to Use
 
