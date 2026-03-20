@@ -29,8 +29,9 @@ Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks
 ### 5. minimalist-skill
 For clean, editorial-style interfaces inspired by tools like Notion and Linear. Enforces warm monochrome palettes, serif/sans-serif typographic contrast, massive whitespace, flat bento grids with crisp hairline borders, and muted pastel accents. Blocks gradients, heavy shadows, and generic SaaS patterns.
 
-### 6. brutalist-skill
+### 6. brutalist-skill ⚠️ `BETA`
 Raw mechanical interfaces fusing Swiss typographic print with CRT terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, and analog degradation effects like halftones, scanlines, and dithering. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.
+> **Status: Prototype** — This skill is an early draft and still fairly generic. Expect refinements, more specific component specs, and tighter constraints in future versions.
 
 ### 7. stitch-skill
 Google Stitch-compatible semantic design system. Converts the taste-skill's anti-slop engineering directives into Stitch's native `DESIGN.md` format — descriptive natural-language rules paired with precise hex values that Stitch's AI agent interprets to generate premium, non-generic interfaces. Includes the SKILL.md agent instructions and a ready-to-import DESIGN.md file.
