@@ -2,6 +2,11 @@
 
 A collection of skills that improve how AI tools write frontend code. Instead of generating generic, boring interfaces, the AI builds modern, premium designs with proper animations, spacing, and visual quality.
 
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-Compatible-blue?style=flat-square)](https://github.com/vercel-labs/agent-skills)
+[![GitHub stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat-square&color=yellow)](https://github.com/Leonxlnx/taste-skill/stargazers)
+[![AI Supported](https://img.shields.io/badge/AI_Supported-Cursor_%7C_Claude_%7C_Antigravity-black?style=flat-square)](#)
+[![Premium UI](https://img.shields.io/badge/Design-Premium_Frontend-white?style=flat-square&color=gray)](#)
+
 ## Feedback & Contributions
 
 I'd love to hear your thoughts! If you have suggestions or find any bugs:
@@ -10,57 +15,33 @@ I'd love to hear your thoughts! If you have suggestions or find any bugs:
 - DM me on [x.com/lexnlin](https://x.com/lexnlin)
 - Email me at [hello@learn2vibecode.dev](mailto:hello@learn2vibecode.dev)
 
+## Installing
+
+Works via CLI for all major AI coding agents (Cursor, Antigravity, Claude Code, Codex, Windsurf, Copilot, etc.):
+
+```bash
+npx skills add https://github.com/Leonxlnx/taste-skill
+```
+
 ## Skills
 
-There are seven skills in this project. Each one lives in its own folder and contains a `SKILL.md` file.
-
-### 1. taste-skill
-The main design skill. Teaches the AI how to write good-looking frontend code from scratch. Covers layout, typography, colors, spacing, motion, and overall visual quality.
-
-### 2. redesign-skill
-For upgrading existing projects. Instead of rebuilding from zero, this skill walks the AI through auditing what's already there and fixing the biggest design problems first.
-
-### 3. soft-skill
-Focuses on making things look and feel expensive. Covers premium fonts, big breathing whitespace, layered card designs with depth, smooth spring-based animations, and floating navigation. Bans all the generic defaults that make AI output look like a template.
-
-### 4. output-skill
-Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks, and half-finished outputs. Forces the AI to actually write everything instead of cutting corners.
-
-### 5. minimalist-skill
-For clean, editorial-style interfaces inspired by tools like Notion and Linear. Enforces warm monochrome palettes, serif/sans-serif typographic contrast, massive whitespace, flat bento grids with crisp hairline borders, and muted pastel accents. Blocks gradients, heavy shadows, and generic SaaS patterns.
-
-### 6. brutalist-skill ⚠️ `BETA`
-Raw mechanical interfaces fusing Swiss typographic print with CRT terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, and analog degradation effects like halftones, scanlines, and dithering. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.
-> **Status: Prototype** — This skill is an early draft and still fairly generic. Expect refinements, more specific component specs, and tighter constraints in future versions.
-
-### 7. stitch-skill
-Google Stitch-compatible semantic design system. Converts the taste-skill's anti-slop engineering directives into Stitch's native `DESIGN.md` format — descriptive natural-language rules paired with precise hex values that Stitch's AI agent interprets to generate premium, non-generic interfaces. Includes the SKILL.md agent instructions and a ready-to-import DESIGN.md file.
-
-## How to Use
-
-1. Copy the `SKILL.md` file from the skill folder you need into your project.
-2. Tell your AI to read and follow it. In most editors you can just reference it directly (e.g. `@SKILL.md` in Cursor).
-
-That's it. The AI reads the file and follows the rules.
+| Skill | Description |
+| --- | --- |
+| **taste-skill** | The main design skill for premium frontend code. Covers layout, typography, colors, spacing, and motion. |
+| **redesign-skill** | For upgrading existing projects by auditing and fixing design problems first. |
+| **soft-skill** | Focuses on an expensive, soft UI look with premium fonts, whitespace, depth, and smooth spring animations. |
+| **output-skill** | Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks, and half-finished outputs. |
+| **minimalist-skill** | For clean, editorial-style interfaces inspired by tools like Notion and Linear. Monochrome, crisp borders. |
+| **brutalist-skill** | ⚠️ `BETA` Raw mechanical interfaces fusing Swiss typographic print with CRT terminal aesthetics. |
+| **stitch-skill** | Google Stitch-compatible semantic design rules for premium AI UI generation. Includes DESIGN.md for export. |
 
 ## Settings (taste-skill only)
 
 The taste skill has three settings at the top of the file. Change these numbers (1-10) depending on what you're building:
 
-**DESIGN_VARIANCE** — How experimental the layout is.
-- 1-3: Clean, centered, standard grids.
-- 4-7: Overlapping elements, varied sizes.
-- 8-10: Asymmetric, lots of whitespace, very modern.
-
-**MOTION_INTENSITY** — How much animation there is.
-- 1-3: Almost none. Simple hover effects.
-- 4-7: Fade-ins, smooth scrolling.
-- 8-10: Magnetic effects, spring physics, scroll-triggered animations.
-
-**VISUAL_DENSITY** — How much content fits on one screen.
-- 1-3: Big and spacious. One element at a time. Luxury feel.
-- 4-7: Normal spacing. Like a typical app or website.
-- 8-10: Dense and compact. Dashboards, data-heavy interfaces.
+- **DESIGN_VARIANCE** — How experimental the layout is. (1-3: Clean/centered | 8-10: Asymmetric/modern)
+- **MOTION_INTENSITY** — How much animation there is. (1-3: Simple hover | 8-10: Magnetic/scroll-triggered)
+- **VISUAL_DENSITY** — How much content fits on one screen. (1-3: Spacious/luxury | 8-10: Dense dashboards)
 
 ## Examples
 
@@ -73,9 +54,9 @@ Created with taste-skill:
 
 ## Support the project
 
-If you find **taste-skill** useful, consider sponsoring the development. 
+If you find **taste-skill** useful, consider sponsoring the development.
 
-[Sponsor on GitHub](https://github.com)
+[Sponsor on GitHub](https://github.com/sponsors/Leonxlnx)
 
 ### Current Sponsors
 - *Your name could be here!*
