@@ -60,7 +60,7 @@ If you find **taste-skill** useful, consider sponsoring the development.
 
 ### Current Sponsors
 
-<a href="https://github.com/mccun934"><img src="https://github.com/mccun934.png" width="40" height="40" style="border-radius:50%" alt="mccun934" /></a> [@mccun934](https://github.com/mccun934)
+<a href="https://github.com/mccun934"><img src="https://github.com/mccun934.png" width="40" height="40" style="border-radius:50%" alt="mccun934" /></a>
 
 ## Research
 
