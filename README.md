@@ -59,7 +59,7 @@ If you find **taste-skill** useful, consider sponsoring the development.
 [Sponsor on GitHub](https://github.com/sponsors/Leonxlnx)
 
 ### Current Sponsors
-- *Your name could be here!*
+- [@mccun934](https://github.com/mccun934)
 
 ## Research
 
