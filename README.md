@@ -7,6 +7,12 @@ A collection of skills that improve how AI tools write frontend code. Instead of
 [![AI Supported](https://img.shields.io/badge/AI_Supported-Cursor_%7C_Claude_%7C_Antigravity-black?style=flat-square)](#)
 [![Premium UI](https://img.shields.io/badge/Design-Premium_Frontend-white?style=flat-square&color=gray)](#)
 
+## Taste Skill v2 Beta
+
+A major update is in progress. If you want early access, sign up for the beta:
+
+[Join the Waitlist](https://tasteskillv2.vercel.app/)
+
 ## Feedback & Contributions
 
 I'd love to hear your thoughts! If you have suggestions or find any bugs:
