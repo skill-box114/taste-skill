@@ -80,3 +80,14 @@ If you find **taste-skill** useful, consider sponsoring the development.
 ## Research
 
 Background research that informed how these skills were built. See the [research](research/) folder.
+
+## Common Questions
+
+**How is this different from other AI design skills?**
+Taste Skill includes 7 specialized variants instead of a single file, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
+
+**Does it work with React, Vue, Svelte, etc.?**
+Yes. Taste Skill is framework-agnostic. The rules focus on design decisions, not framework-specific code patterns.
+
+**What is a SKILL.md file?**
+A portable instruction file that AI coding agents detect and follow automatically. No configuration is needed, just install it and your agent reads it.
