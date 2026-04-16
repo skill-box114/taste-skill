@@ -40,6 +40,7 @@ npx skills add https://github.com/Leonxlnx/taste-skill
 | Skill | Description |
 | --- | --- |
 | **taste-skill** | The main design skill for premium frontend code. Covers layout, typography, colors, spacing, and motion. |
+| **gpt-taste** | Premium Awwwards-level frontend/UI skill with deterministic randomization checks and strict GSAP animation requirements. |
 | **redesign-skill** | For upgrading existing projects by auditing and fixing design problems first. |
 | **soft-skill** | Focuses on an expensive, soft UI look with premium fonts, whitespace, depth, and smooth spring animations. |
 | **output-skill** | Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks, and half-finished outputs. |
