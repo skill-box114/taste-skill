@@ -1,6 +1,6 @@
 ---
 name: gpt-taste
-description: Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for immense layout variance, strictly bans repetitive L/R loops and 6-line headers, and utilizes high-end creative components (Tilted Polaroid arrays, hollow outline typography, text-masking, inline images, custom geometric SVGs). Requires strict GSAP ScrollTriggers, aesthetic consistency, and absolute horizontal overflow control.
+description: Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for immense layout variance, strictly bans repetitive L/R loops and 6-line headers, and utilizes high-end creative components (Tilted Polaroid arrays, hollow outline typography, text-masking, inline images, custom geometric SVGs). Requires strict GSAP ScrollTriggers, scroll-reveal text sections, aesthetic consistency, expanded footer chapters, and absolute horizontal overflow control.
 ---
 
 # CORE DIRECTIVE: AWWWARDS-LEVEL DESIGN ENGINEERING
@@ -20,7 +20,7 @@ Use a deterministic seed (e.g., character count of the user prompt modulo math) 
 - **Hero Architecture:** ["Massive Text-Mask Background", "Centered Polaroid Scatter", "The Asymmetric Pinned Split", "Inline Typography Behemoth"] (NEVER basic L/R).
 - **Color & UI Paradigm:** ["Brutalist Monochrome + 1 Neon Accent", "Soft Minimalist Pastels + Pixel SVGs", "Dark Mode Glassmorphism + Radial Glows", "Warm Editorial Serif + Grainy Photography"]
 - **Component Arsenal (Pick 3):** ["The Tilted Polaroid Fan", "Hollow Outline Metric Grid", "Minimalist Custom SVG Bento", "Frosted Vertical Slices", "Horizontal Hover Accordion", "Infinite Marquee Divider"]
-- **GSAP Motion Engine (Pick 2):** ["Scroll-Triggered Fanning", "Parallax Image Scrubbing", "Scrubbing Text Reveal", "Pinned Section Overlap"]
+- **GSAP Motion Engine (Pick 2):** ["Scroll-Triggered Fanning", "Parallax Image Scrubbing", "Scrubbing Text Reveal", "Pinned Section Overlap", "Gray-to-White Scroll Reveal Text"]
 
 You must follow the exact output of your simulated Python randomization.
 
@@ -54,11 +54,17 @@ The headline must breathe. It must NOT be a narrow, 6-line text wall.
 
 You are strictly FORBIDDEN from using a basic "Text Left / Image Right" flexbox layout for every section. Use these advanced architectural compositions:
 
+- **No Card Monoculture:** You are strictly FORBIDDEN from solving every section as a grid of boxed cards. At least 2 major sections must be non-card compositions such as full-bleed image chapters, oversized background-image statements, airy editorial text blocks, pinned media scenes, or clean gallery rails.
+
 - **The Hover-Mask Hero:** Massive, screen-spanning typography (e.g., "CREATIVE"). The text is filled with an image using bg-clip-text text-transparent bg-[url(...)] bg-cover bg-center.
 
 - **The Floating Scatter (Polaroid Hero):** Clean, centered typography. Surrounding the text are 3 or 4 smaller images styled like polaroids, absolutely positioned (absolute top-10 left-10) with subtle rotations (rotate-[-6deg], rotate-[4deg]) and floating animations.
 
 - **The Pinned Sticky Split:** Left side is a narrow title column taking up 30% width (sticky top-20). The right side is 70% width containing a massive vertical stack of images that scrub past.
+
+- **The Cinematic Background Statement:** Use a massive GSAP-treated background image with restrained overlay text. The image should feel like a chapter divider, not a card. Copy stays concise while the media carries the section.
+
+- **The Editorial Image Chapter:** A large clean image, generous whitespace, and a precise text block above, below, or partially overlapping the media. This section must feel like a premium magazine spread, not a SaaS feature grid.
 
 ## 5. THE HIGH-END COMPONENT ARSENAL
 
@@ -88,11 +94,25 @@ Static interfaces are an automatic failure. You must write real GSAP (@gsap/reac
 
 - **Parallax Scrubbing:** Background images inside containers must move at a different speed than the scroll using GSAP yPercent and scrub: true.
 
+- **Gray-to-White Scroll Reveal Text:** You must support the premium scroll-reveal text effect where a paragraph or sentence starts muted gray and progressively reveals to bright white as the user scrolls. Wrap words in spans, start them at low opacity or dim color (e.g., white/20 or zinc-500), and scrub them upward to fully readable white with even timing.
+
 - **Card Stacking:** Cards overlap and stack dynamically from the bottom as the user scrolls down using stagger: 0.15.
 
 - **Hover Micro-physics:** Every clickable card must react. Use group-hover:scale-[1.03] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]. Buttons should physically depress on active (active:scale-95).
 
-## 7. ASSET AUTHENTICITY & SPACING DISCIPLINE
+## 7. FINAL CTA & FOOTER CHAPTER
+
+The footer must not be a tiny afterthought. It must be its own deliberate closing chapter.
+
+- **Expanded Footer Composition:** The closing section must be large, clean, and content-rich enough to feel finished. Include a strong final statement, supporting copy, a clear CTA, and structured secondary information such as navigation, contact, social links, legal, location, or metadata.
+
+- **Own Section, Not a Strip:** The footer must have real spatial presence (e.g., py-24 md:py-32 or larger). A one-line copyright strip alone is a failure.
+
+- **Keep It Elegant:** The footer can be an editorial grid, a restrained split layout, a large-image closing scene, or a typography-led chapter. Do not default to more random cards.
+
+- **Tone Consistency:** The footer must match the chosen visual paradigm exactly. If the site is brutalist, the footer is brutalist. If the site is soft glass, the footer must carry that same softness and radius logic cleanly.
+
+## 8. ASSET AUTHENTICITY & SPACING DISCIPLINE
 
 - **Image Art Direction:** Use https://picsum.photos/seed/{keyword}/1920/1080. You MUST apply CSS filters (grayscale, mix-blend-luminosity, contrast-125) so they look like high-end editorial photography, not cheap stock images.
 
@@ -100,18 +120,20 @@ Static interfaces are an automatic failure. You must write real GSAP (@gsap/reac
 
 - **Kill Horizontal Scroll Bugs:** Wrap the entire page layout in <main className="overflow-x-hidden w-full max-w-full"> to absolutely prevent scrollbars caused by off-screen rotated polaroids or GSAP transforms.
 
-## 8. MANDATORY PRE-FLIGHT <design_plan>
+## 9. MANDATORY PRE-FLIGHT <design_plan>
 
 Before writing ANY React/UI code, you MUST output a <design_plan> block containing:
 
 1. **Python RNG Execution:** Write a mock Python console output showing the deterministic selection of your Architecture, Typography, Component Arsenal, Color Paradigm, and GSAP animations based on the prompt's character count.
 
-2. **Layout Rhythm Proof:** Explicitly detail how Section 1, 2, and 3 completely avoid the "Left-Text/Right-Image" repetition and instead use advanced layouts (e.g., Polaroid fan, inline text images).
+2. **Layout Rhythm Proof:** Explicitly detail how the major sections avoid the "Left-Text/Right-Image" repetition, where the non-card editorial or media-led chapters appear, and how the page avoids turning into an endless card loop.
 
 3. **Headline Math Check:** State the exact max-w class you are applying to the H1. Confirm it will flow horizontally in 2-3 lines MAX. Confirm there are no spammy pills in the hero.
 
 4. **Consistency & SVG Audit:** State the global border-radius token you will enforce. Describe the simple, geometric nature of the custom SVGs you will hand-code.
 
 5. **Bug Check:** Confirm overflow-x-hidden is applied to the root container.
+
+6. **Footer Audit:** Confirm the footer is a full closing chapter with meaningful structure, not a minimal afterthought.
 
 Only output the UI code after this rigorous verification is complete.
