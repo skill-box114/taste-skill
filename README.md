@@ -37,16 +37,27 @@ npx skills add https://github.com/Leonxlnx/taste-skill
 
 ## Skills
 
+Each skill has a different job. You do not need to use all of them at once.
+
 | Skill | Description |
 | --- | --- |
-| **taste-skill** | The main design skill for premium frontend code. Covers layout, typography, colors, spacing, and motion. |
-| **gpt-taste** | Premium Awwwards-level frontend/UI skill with deterministic randomization checks and strict GSAP animation requirements. |
-| **redesign-skill** | For upgrading existing projects by auditing and fixing design problems first. |
-| **soft-skill** | Focuses on an expensive, soft UI look with premium fonts, whitespace, depth, and smooth spring animations. |
-| **output-skill** | Stops the AI from being lazy. Prevents placeholder comments, skipped code blocks, and half-finished outputs. |
-| **minimalist-skill** | For clean, editorial-style interfaces inspired by tools like Notion and Linear. Monochrome, crisp borders. |
-| **brutalist-skill** | ⚠️ `BETA` Raw mechanical interfaces fusing Swiss typographic print with CRT terminal aesthetics. |
-| **stitch-skill** | Google Stitch-compatible semantic design rules for premium AI UI generation. Includes DESIGN.md for export. |
+| **taste-skill** | The default all-rounder. Use this when you want premium frontend output without forcing one narrow visual style. |
+| **gpt-taste** | The stricter, more opinionated variant for GPT/Codex-style workflows. Best for high-variance layouts, stronger GSAP direction, and more aggressive anti-slop rules. |
+| **redesign-skill** | Use this when a project already exists and needs to be improved. It focuses on auditing the current UI first, then fixing weak layout, spacing, hierarchy, and styling decisions. |
+| **soft-skill** | Use this for polished, calm, expensive-looking interfaces with softer contrast, more whitespace, premium fonts, and smooth spring motion. |
+| **output-skill** | Use this when the model keeps being lazy. It pushes for complete output, no placeholder comments, and no skipped implementation steps. |
+| **minimalist-skill** | Use this for cleaner editorial product UI inspired by tools like Notion or Linear. It keeps the palette restrained and the structure crisp. |
+| **brutalist-skill** | ⚠️ `BETA` Use this for harder, more mechanical visual language: Swiss typography, sharp contrast, raw structure, and more experimental composition. |
+| **stitch-skill** | Use this when you want Google Stitch-compatible semantic design rules, including the extra `DESIGN.md` export format. |
+
+### Which one should I use?
+
+- Start with **taste-skill** if you want the safest general recommendation.
+- Use **gpt-taste** if you want a stronger visual opinion, more layout variance, and stricter motion/layout enforcement.
+- Use **redesign-skill** if the project already exists and you want to improve what is there instead of starting from scratch.
+- Use **soft-skill**, **minimalist-skill**, or **brutalist-skill** when you already know the visual direction you want.
+- Add **output-skill** when your agent tends to leave work unfinished.
+- Use **stitch-skill** when you specifically need Stitch-oriented output.
 
 ## Settings (taste-skill only)
 
@@ -86,7 +97,7 @@ Background research that informed how these skills were built. See the [research
 ## Common Questions
 
 **How is this different from other AI design skills?**
-Taste Skill includes 7 specialized variants instead of a single file, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
+Taste Skill includes 8 specialized variants instead of a single file, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
 
 **Does it work with React, Vue, Svelte, etc.?**
 Yes. Taste Skill is framework-agnostic. The rules focus on design decisions, not framework-specific code patterns.
