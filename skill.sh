@@ -4,7 +4,7 @@
 declare -A SKILLS=(
   [taste-skill]="skills/taste-skill/SKILL.md"
   [gpt-taste]="skills/gpt-tasteskill/SKILL.md"
-  [images-taste-skill]="skills/images-taste-skill/SKILL.md"
+  [images-taste-skill]="imagegenskills/frontendwebsiteimageskill/SKILL.md"
   [redesign-skill]="skills/redesign-skill/SKILL.md"
   [soft-skill]="skills/soft-skill/SKILL.md"
   [output-skill]="skills/output-skill/SKILL.md"

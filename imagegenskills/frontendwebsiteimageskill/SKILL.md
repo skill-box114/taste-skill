@@ -1,6 +1,6 @@
 ---
 name: image-taste-frontend
-description: Elite frontend image-direction skill for generating premium, artistic, implementation-friendly website design references. Uses combinatorial variation to avoid repetitive AI aesthetics, enforces cinematic hero minimalism, strong hierarchy, generous spacing, image-led composition, and anti-slop visual discipline. For visual frontend tasks, this skill must first generate the design image(s) itself, then analyze them, then implement the frontend to match them as closely as possible.
+description: Elite frontend image-direction skill for generating premium, artistic, implementation-friendly website design references. Uses combinatorial variation to avoid repetitive AI aesthetics, enforces cinematic hero minimalism, strong hierarchy, generous spacing, image-led composition, and anti-slop visual discipline. Optimized for hero sections, landing pages, and multi-section site comps that developers or coding models can accurately recreate.
 ---
 
 # CORE DIRECTIVE: AWWWARDS-LEVEL IMAGE ART DIRECTION
@@ -35,28 +35,21 @@ The output must feel:
 Do not generate random mood art unless explicitly asked.
 Default to website design comps.
 
-IMPORTANT:
-For visual frontend tasks, you must first generate the design image or image set yourself.
-Do not begin with implementation first.
-Do not skip the image-generation step when image generation is available.
-The generated image is the primary visual source of truth.
-Only after generating and inspecting the image(s) should you implement the frontend.
-
 ---
 
 ## 1. ACTIVE BASELINE CONFIGURATION
 
-- DESIGN_VARIANCE: 8  
+- DESIGN_VARIANCE: 8
   `(1 = rigid / symmetrical, 10 = artsy / asymmetric)`
-- VISUAL_DENSITY: 4  
+- VISUAL_DENSITY: 4
   `(1 = airy / gallery-like, 10 = packed / intense)`
-- ART_DIRECTION: 8  
+- ART_DIRECTION: 8
   `(1 = safe commercial, 10 = bold creative statement)`
-- IMPLEMENTATION_CLARITY: 9  
+- IMPLEMENTATION_CLARITY: 9
   `(1 = loose moodboard, 10 = very codeable UI reference)`
-- IMAGE_USAGE_PRIORITY: 9  
+- IMAGE_USAGE_PRIORITY: 9
   `(1 = mostly typographic, 10 = strongly image-led)`
-- SPACING_GENEROSITY: 8  
+- SPACING_GENEROSITY: 8
   `(1 = compact / tight, 10 = very spacious / breathable)`
 
 AI Instruction:
@@ -76,88 +69,7 @@ Interpretation:
 
 ---
 
-## 2. MANDATORY IMAGE-FIRST RULE
-
-For frontend design requests where visual quality matters, image generation is mandatory first.
-
-This means:
-1. generate the design image or multi-image reference set yourself first
-2. inspect the generated image(s)
-3. extract the visible system from them
-4. implement the frontend only after that
-
-Do not:
-- start with freeform coding
-- skip straight to implementation
-- describe a design without first generating it when generation is available
-- rely on memory of "what good frontend looks like" instead of producing the visual reference
-
-The required workflow is:
-
-image generation first  
-image inspection second  
-implementation third
-
-If the task is primarily visual, this order is not optional.
-
----
-
-## 3. IMAGE-FIRST CODEX WORKFLOW
-
-When this skill is used inside Codex or any environment that supports image generation plus implementation, default to an image-first workflow for frontend design tasks.
-
-Preferred execution order:
-1. generate the design image or multi-image reference set first
-2. inspect the generated image(s) carefully
-3. extract the layout, spacing, hierarchy, typography character, section rhythm, and component language
-4. implement the frontend to match the generated design as closely as reasonably possible
-5. only invent missing details when the image leaves something ambiguous
-
-For frontend-heavy requests, do not begin by freely designing in code.
-Begin by creating a strong visual reference first whenever image generation is available.
-
-The image is the primary art-direction source.
-The code is the implementation layer.
-
-This workflow is especially preferred for:
-- hero sections
-- landing pages
-- marketing sites
-- visually ambitious product pages
-- editorial brand pages
-- redesign requests
-- "make this look premium" tasks
-
----
-
-## 4. WHEN TO TRIGGER IMAGE GENERATION FIRST
-
-If image generation is available, strongly prefer generating image references first when the request is mainly about visual frontend quality.
-
-Trigger image-first workflow when the user asks for:
-- a beautiful hero section
-- a premium landing page
-- a creative website
-- a redesign
-- a more modern / more aesthetic / more polished interface
-- a marketing page
-- a portfolio site
-- a startup site where visual taste matters heavily
-- a multi-section website concept
-- anything described primarily in visual terms
-
-Do not default to direct coding first if the main challenge is taste, layout quality, or art direction.
-
-Direct-code first is more acceptable when:
-- the request is mostly technical
-- the user wants a bug fix
-- the user already provides a precise design system
-- the task is primarily structural rather than visual
-
----
-
-## 5. THE COMBINATORIAL VARIATION ENGINE
-
+## 2. THE COMBINATORIAL VARIATION ENGINE
 To avoid repetitive AI-looking output, internally choose one option from each category based on the prompt and commit to it consistently.
 
 Do not mash everything together into chaos.
@@ -165,13 +77,13 @@ Pick a strong combination and execute it clearly.
 
 ### Theme Paradigm
 Choose 1:
-1. Pristine Light Mode  
+1. Pristine Light Mode
    Off-white / cream / paper tones, sharp dark text, editorial confidence.
-2. Deep Dark Mode  
+2. Deep Dark Mode
    Charcoal / graphite / zinc, elegant glow only when justified.
-3. Bold Studio Solid  
+3. Bold Studio Solid
    Strong controlled color fields like oxblood, royal blue, forest, vermilion, or emerald with crisp contrasting UI.
-4. Quiet Premium Neutral  
+4. Quiet Premium Neutral
    Bone, sand, taupe, stone, smoke, muted contrast, restrained luxury.
 
 ### Background Character
@@ -240,8 +152,7 @@ They are visual-direction cues the generated design should imply.
 
 ---
 
-## 6. FRONTEND REFERENCE RULE
-
+## 3. FRONTEND REFERENCE RULE
 Every generated image must clearly communicate:
 - layout
 - section hierarchy
@@ -259,8 +170,7 @@ Do not produce vague abstract artwork when the request is for frontend.
 
 ---
 
-## 7. HERO MINIMALISM RULES
-
+## 4. HERO MINIMALISM RULES
 The hero must feel cinematic, clear, and intentional.
 
 ### Absolute Hero Rules
@@ -307,8 +217,7 @@ instead.
 
 ---
 
-## 8. IMAGE COUNT & PAGE SLICING
-
+## 5. IMAGE COUNT & PAGE SLICING
 When the user asks for a frontend design, decide image count based on section count.
 
 ### Single-section requests
@@ -344,8 +253,7 @@ For multi-section outputs:
 
 ---
 
-## 9. CREATIVITY ESCALATION RULE
-
+## 6. CREATIVITY ESCALATION RULE
 The design must show real creative ambition.
 
 Do not settle for the first obvious layout solution.
@@ -378,8 +286,7 @@ Do not:
 
 ---
 
-## 10. IMAGE-FIRST ART DIRECTION
-
+## 7. IMAGE-FIRST ART DIRECTION
 This skill must actively use images.
 
 Images are not optional decoration.
@@ -416,97 +323,7 @@ Avoid:
 
 ---
 
-## 11. DESIGN-TO-CODE COPY DISCIPLINE
-
-After generating the reference image(s), implement the design in a copy-oriented way.
-
-This means:
-- follow the reference closely
-- preserve the layout logic
-- preserve spacing rhythm
-- preserve section ordering
-- preserve image/text balance
-- preserve the typography mood
-- preserve the component style
-- preserve the overall visual tension and cleanliness
-
-Do not drift into a different design direction during implementation.
-Do not "improve" the design by replacing it with a generic coded layout.
-Do not collapse the composition into standard AI-coded patterns.
-
-The goal is not:
-- "inspired by the image"
-
-The goal is:
-- "visually faithful to the image, translated into real frontend"
-
-If some details are ambiguous, resolve them in the same design language rather than inventing a new one.
-
----
-
-## 12. IMAGE ANALYSIS BEFORE IMPLEMENTATION
-
-Before implementing from generated images, analyze them carefully.
-
-Extract and preserve:
-- overall page structure
-- hero composition
-- section sequence
-- dominant alignment logic
-- approximate spacing system
-- typography scale relationships
-- card and panel shapes
-- border radius logic
-- imagery placement
-- visual density
-- CTA treatment
-- color palette and contrast logic
-- decorative motifs only when they are structurally important
-
-Treat the generated image as a design specification, not just inspiration.
-
-If multiple images are provided, treat them as one continuous site and maintain consistency across the full implementation.
-
----
-
-## 13. ANTI-DRIFT IMPLEMENTATION RULE
-
-A common failure mode is design drift:
-the generated image looks strong, but the coded result becomes generic.
-
-Strictly avoid that.
-
-During implementation:
-- do not simplify the layout into a default template
-- do not replace image-led sections with generic card rows
-- do not compress generous spacing into a dense layout
-- do not replace distinctive typography with plain default hierarchy
-- do not turn asymmetric sections into repetitive left-text/right-image blocks
-- do not remove the page's visual identity for convenience
-
-The final coded result should still feel like the same design world as the generated image.
-
----
-
-## 14. MISSING DETAIL RESOLUTION
-
-When implementing from an image, some details may be unclear.
-
-Resolve missing details by following this priority:
-
-1. preserve the visible design language
-2. preserve the spacing and hierarchy logic
-3. preserve the component family
-4. preserve the same mood and level of polish
-5. choose the most implementation-friendly version that still feels visually faithful
-
-Do not fill ambiguity with generic defaults.
-Fill ambiguity with system-consistent decisions.
-
----
-
-## 15. ANTI-AI-SLOP RULES
-
+## 8. ANTI-AI-SLOP RULES
 Strictly avoid these patterns unless explicitly requested.
 
 ### Layout slop
@@ -561,8 +378,7 @@ Use short, believable, design-friendly copy.
 
 ---
 
-## 16. TYPOGRAPHY-FIRST DISCIPLINE
-
+## 9. TYPOGRAPHY-FIRST DISCIPLINE
 Typography is not filler.
 Typography is a primary design material.
 
@@ -581,8 +397,7 @@ For tech/product directions:
 
 ---
 
-## 17. SECTION RHYTHM RULE
-
+## 10. SECTION RHYTHM RULE
 A high-end site does not feel like repeated boxes.
 
 Vary section rhythm across the page by changing:
@@ -606,7 +421,7 @@ Important:
 
 ---
 
-## 18. COMPONENT EXECUTION GUIDELINES
+## 11. COMPONENT EXECUTION GUIDELINES
 
 ### Diagonal Staggered Square Masonry
 Use square image or content blocks with strong staggered vertical rhythm.
@@ -643,8 +458,7 @@ Never let them become decorative clutter.
 
 ---
 
-## 19. DENSITY & SPACING DISCIPLINE
-
+## 12. DENSITY & SPACING DISCIPLINE
 Do not make everything too dense.
 
 The page should breathe.
@@ -685,7 +499,7 @@ Do not let spacing become random.
 
 ---
 
-## 20. COLOR & MATERIAL RULES
+## 13. COLOR & MATERIAL RULES
 
 ### Palette Discipline
 Use one controlled palette with one or two accents at most.
@@ -710,8 +524,7 @@ But always keep the frontend structure readable.
 
 ---
 
-## 21. IMAGE / MEDIA DIRECTION
-
+## 14. IMAGE / MEDIA DIRECTION
 If imagery is present, it must support the layout.
 
 Allowed:
@@ -725,13 +538,13 @@ Allowed:
 
 Avoid:
 - irrelevant scenery
-- stock-photo clichés
+- stock-photo cliches
 - decorative junk
 - visuals that overpower the page hierarchy
 
 ---
 
-## 22. DEFAULT SITE PACKS
+## 15. DEFAULT SITE PACKS
 
 ### 4-section pack
 1. Hero
@@ -765,8 +578,7 @@ Avoid:
 
 ---
 
-## 23. MULTI-IMAGE CONSISTENCY RULE
-
+## 16. MULTI-IMAGE CONSISTENCY RULE
 For multi-image sites, enforce:
 - same brand world
 - same type scale logic
@@ -780,8 +592,7 @@ Image 2 and 3 must not drift into a different site.
 
 ---
 
-## 24. CLARITY CHECK
-
+## 17. CLARITY CHECK
 Before finalizing, verify internally:
 
 1. Is the hierarchy obvious?
@@ -802,74 +613,65 @@ If not, refine internally before output.
 
 ---
 
-## 25. RESPONSE BEHAVIOR
-
+## 18. RESPONSE BEHAVIOR
 When the user asks for a frontend design:
 1. infer site type
 2. infer number of sections
-3. decide whether image-first workflow should be used
-4. if image generation is available and visual quality is central, generate the design image(s) first
-5. choose image count
-6. choose a strong visual combination
-7. choose 4 signature components
-8. choose 2 motion-implied cues
-9. enforce hero minimalism
-10. enforce strong image usage
-11. increase creativity without adding clutter
-12. keep section spacing generous, even, and clean
-13. remove AI slop
-14. analyze the generated image(s)
-15. implement the frontend to match the generated design as closely as reasonably possible
+3. choose image count
+4. choose a strong visual combination
+5. choose 4 signature components
+6. choose 2 motion-implied cues
+7. enforce hero minimalism
+8. enforce strong image usage
+9. increase creativity without adding clutter
+10. keep section spacing generous, even, and clean
+11. remove AI slop
+12. generate the design image(s)
 
 Do not ask unnecessary follow-up questions if a strong interpretation is possible.
-Do not start with freeform coding when the visual design problem should clearly be solved with image generation first.
 
 ---
 
-## 26. EXAMPLE INTERPRETATIONS
+## 19. EXAMPLE INTERPRETATIONS
 
 ### Example 1
 User:
 "make a hero section for an AI startup"
 
 Interpretation:
-- first generate 1 hero reference image yourself
+- 1 image
 - theme likely Deep Dark or Bold Studio Solid
 - hero architecture likely Asymmetric Split or Inline Typography Behemoth
 - concise statement headline
 - clear CTA
 - premium product visual
-- no cliché dashboard spam
-- only then implement the hero
+- no cliche dashboard spam
 
 ### Example 2
 User:
 "design 8 sections for a fintech website"
 
 Interpretation:
-- first generate 2 tall vertical reference images yourself
+- 2 tall vertical images
 - Swiss or modular structure
 - strong trust and clarity
 - controlled palette
 - high implementation clarity
-- then implement the site from those references
 
 ### Example 3
 User:
 "creative agency landing page, 12 sections"
 
 Interpretation:
-- first generate 3 tall vertical reference images yourself
+- 3 tall vertical images
 - editorial or poster-like direction
 - stronger typography
 - more asymmetry
 - still readable and clearly codeable
-- then implement the site from those references
 
 ---
 
-## 27. FINAL GOAL
-
+## 20. FINAL GOAL
 Generate frontend reference images that feel:
 - artistic
 - premium
@@ -881,11 +683,4 @@ Generate frontend reference images that feel:
 - anti-generic
 - implementation-friendly
 
-For visual frontend work, the skill must first generate the image(s) itself, then use those generated image(s) as the primary visual source, then build the frontend to match them closely.
-
-The result should be:
-- strong as an image
-- strong as a design system
-- and strong as implemented frontend
-
-The final outcome should look like a top-tier website concept translated faithfully into real code, not a dense, repetitive AI layout and not a generic coded reinterpretation.
+The result should look like a top-tier website concept with strong imagery, confident creativity, and generous spacing - not a dense, repetitive AI layout.
