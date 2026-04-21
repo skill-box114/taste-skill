@@ -15,9 +15,7 @@ A collection of skills that improve how AI tools write frontend code. Instead of
 
 ## Taste Skill v2 Beta
 
-A major update is in progress. If you want early access, sign up for the beta:
-
-[Join the Waitlist](https://tasteskillv2.vercel.app/)
+Release soon!
 
 ## Feedback & Contributions
 
@@ -25,7 +23,8 @@ I'd love to hear your thoughts! If you have suggestions or find any bugs:
 
 - Open a Pull Request or Issue right here on GitHub
 - DM me on [x.com/lexnlin](https://x.com/lexnlin)
-- Email me at [hello@learn2vibecode.dev](mailto:hello@learn2vibecode.dev)
+- DM Blueemi on [x.com/blueemi99](https://x.com/blueemi99)
+- Email me at [support@tasteskill.dev](mailto:support@tasteskill.dev)
 
 ## Installing
 
@@ -42,7 +41,7 @@ Each skill has a different job. You do not need to use all of them at once.
 | Skill | Description |
 | --- | --- |
 | **taste-skill** | The default all-rounder. Use this when you want premium frontend output without forcing one narrow visual style. |
-| **gpt-taste** | The stricter, more opinionated variant for GPT/Codex-style workflows. Best for high-variance layouts, stronger GSAP direction, and more aggressive anti-slop rules. |
+| **gpt-taste** | The stricter, more opinionated variant for GPT/Codex models. Best for high-variance layouts, stronger GSAP direction, and more aggressive anti-slop rules. |
 | **redesign-skill** | Use this when a project already exists and needs to be improved. It focuses on auditing the current UI first, then fixing weak layout, spacing, hierarchy, and styling decisions. |
 | **soft-skill** | Use this for polished, calm, expensive-looking interfaces with softer contrast, more whitespace, premium fonts, and smooth spring motion. |
 | **output-skill** | Use this when the model keeps being lazy. It pushes for complete output, no placeholder comments, and no skipped implementation steps. |
@@ -53,7 +52,7 @@ Each skill has a different job. You do not need to use all of them at once.
 ### Which one should I use?
 
 - Start with **taste-skill** if you want the safest general recommendation.
-- Use **gpt-taste** if you want a stronger visual opinion, more layout variance, and stricter motion/layout enforcement.
+- Use **gpt-taste** if you're using GPT/Codex models, you want a stronger visual opinion, more layout variance, and stricter motion/layout enforcement.
 - Use **redesign-skill** if the project already exists and you want to improve what is there instead of starting from scratch.
 - Use **soft-skill**, **minimalist-skill**, or **brutalist-skill** when you already know the visual direction you want.
 - Add **output-skill** when your agent tends to leave work unfinished.
