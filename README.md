@@ -42,6 +42,7 @@ Each skill has a different job. You do not need to use all of them at once.
 | --- | --- |
 | **taste-skill** | The default all-rounder. Use this when you want premium frontend output without forcing one narrow visual style. |
 | **gpt-taste** | The stricter, more opinionated variant for GPT/Codex models. Best for high-variance layouts, stronger GSAP direction, and more aggressive anti-slop rules. |
+| **images-taste-skill** | The image-first frontend reference skill. It is specialized for GPT image generation workflows in Codex: generate strong website images first, analyze them, then implement the frontend to match them closely. |
 | **redesign-skill** | Use this when a project already exists and needs to be improved. It focuses on auditing the current UI first, then fixing weak layout, spacing, hierarchy, and styling decisions. |
 | **soft-skill** | Use this for polished, calm, expensive-looking interfaces with softer contrast, more whitespace, premium fonts, and smooth spring motion. |
 | **output-skill** | Use this when the model keeps being lazy. It pushes for complete output, no placeholder comments, and no skipped implementation steps. |
@@ -53,10 +54,15 @@ Each skill has a different job. You do not need to use all of them at once.
 
 - Start with **taste-skill** if you want the safest general recommendation.
 - Use **gpt-taste** if you're using GPT/Codex models, you want a stronger visual opinion, more layout variance, and stricter motion/layout enforcement.
+- Use **images-taste-skill** if visual quality is the main challenge and you want an image-first workflow: generate the design, inspect it, then code it faithfully.
 - Use **redesign-skill** if the project already exists and you want to improve what is there instead of starting from scratch.
 - Use **soft-skill**, **minimalist-skill**, or **brutalist-skill** when you already know the visual direction you want.
 - Add **output-skill** when your agent tends to leave work unfinished.
 - Use **stitch-skill** when you specifically need Stitch-oriented output.
+
+### Image-First Tip
+
+For **images-taste-skill**, it often helps to state the workflow explicitly in the prompt. A line like `follow rules strictly and generate images, then analyze, then code` can reinforce the intended execution order in agents that support both image generation and implementation.
 
 ## Settings (taste-skill only)
 
@@ -96,7 +102,7 @@ Background research that informed how these skills were built. See the [research
 ## Common Questions
 
 **How is this different from other AI design skills?**
-Taste Skill includes 8 specialized variants instead of a single file, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
+Taste Skill includes 9 specialized variants instead of a single file, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
 
 **Does it work with React, Vue, Svelte, etc.?**
 Yes. Taste Skill is framework-agnostic. The rules focus on design decisions, not framework-specific code patterns.
