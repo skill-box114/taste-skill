@@ -10,12 +10,8 @@ A collection of skills that improve how AI tools write frontend code. Instead of
 
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-Compatible-blue?style=flat-square)](https://github.com/vercel-labs/agent-skills)
 [![GitHub stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat-square&color=yellow)](https://github.com/Leonxlnx/taste-skill/stargazers)
-[![AI Supported](https://img.shields.io/badge/AI_Supported-Cursor_%7C_Claude_%7C_Antigravity-black?style=flat-square)](#)
+[![AI Supported](https://img.shields.io/badge/AI_Supported-Codex_%7C_Cursor_%7C_Claude_Code-black?style=flat-square)](#)
 [![Premium UI](https://img.shields.io/badge/Design-Premium_Frontend-white?style=flat-square&color=gray)](#)
-
-## Taste Skill v2 Beta
-
-Release soon!
 
 ## Feedback & Contributions
 
@@ -33,6 +29,8 @@ Works via CLI for all major AI coding agents (Cursor, Antigravity, Claude Code, 
 ```bash
 npx skills add https://github.com/Leonxlnx/taste-skill
 ```
+
+Or just copy the `SKILL.md` file you need directly into your project or paste it into ChatGPT / Codex.
 
 ## Skills
 
@@ -53,6 +51,15 @@ Image-generation-only skills live in `imagegen-skills/`.
 | **brutalist-skill** | ⚠️ `BETA` Use this for harder, more mechanical visual language: Swiss typography, sharp contrast, raw structure, and more experimental composition. |
 | **stitch-skill** | Use this when you want Google Stitch-compatible semantic design rules, including the extra `DESIGN.md` export format. |
 
+### Image Generation Skills
+
+These skills generate design reference images only. They do not write code. Use them with ChatGPT, Codex, or any agent that supports image generation.
+
+| Skill | Description |
+| --- | --- |
+| **imagegen-frontend-web** | Generates premium website design reference images. Awwwards-level art direction, strong typography, generous spacing, and anti-slop visual discipline. Lives in `imagegen-skills/frontend-web/`. |
+| **imagegen-frontend-mobile** | Generates premium mobile app screen concepts and flows. iOS, Android, and cross-platform. Clean hierarchy, phone mockup framing, controlled palettes, and strong multi-screen consistency. Lives in `imagegen-skills/frontend-mobile/`. |
+
 ### Which one should I use?
 
 - Start with **taste-skill** if you want the safest general recommendation.
@@ -66,6 +73,10 @@ Image-generation-only skills live in `imagegen-skills/`.
 ### Image-First Tip
 
 For **image-to-code-skill**, it often helps to state the workflow explicitly in the prompt. A line like `follow rules strictly and generate images, then analyze, then code` can reinforce the intended execution order in agents that support both image generation and implementation.
+
+### Using Image Generation Skills with ChatGPT / Codex
+
+The image generation skills (`imagegen-frontend-web`, `imagegen-frontend-mobile`) work great with ChatGPT and Codex. Just paste or attach the skill file in your conversation and ask it to generate screens or website sections. The generated images can then be handed to your coding agent to turn them into code right away.
 
 ## Settings (taste-skill only)
 
@@ -98,6 +109,16 @@ If you find **taste-skill** useful, consider sponsoring the development.
 <a href="https://github.com/ghughes7"><img src="https://github.com/ghughes7.png" width="40" height="40" style="border-radius:50%" alt="ghughes7" title="ghughes7" /></a>
 <a href="https://github.com/AtharvaJaiswal005"><img src="https://github.com/AtharvaJaiswal005.png" width="40" height="40" style="border-radius:50%" alt="AtharvaJaiswal005" title="AtharvaJaiswal005" /></a>
 
+<p align="center">
+ <a href="https://www.star-history.com/leonxlnx/taste-skill">
+  <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=Leonxlnx/taste-skill&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=Leonxlnx/taste-skill" />
+   <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=Leonxlnx/taste-skill" />
+  </picture>
+ </a>
+</p>
+
 ## Research
 
 Background research that informed how these skills were built. See the [research](research/) folder.
@@ -105,7 +126,7 @@ Background research that informed how these skills were built. See the [research
 ## Common Questions
 
 **How is this different from other AI design skills?**
-Taste Skill includes 9 specialized variants instead of a single file, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
+Taste Skill includes multiple specialized variants for different use cases, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
 
 **Does it work with React, Vue, Svelte, etc.?**
 Yes. Taste Skill is framework-agnostic. The rules focus on design decisions, not framework-specific code patterns.
