@@ -59,6 +59,7 @@ These skills generate design reference images only. They do not write code. Use 
 | --- | --- |
 | **imagegen-frontend-web** | Generates premium website design reference images. Awwwards-level art direction, strong typography, generous spacing, and anti-slop visual discipline. Lives in `imagegen-skills/frontend-web/`. |
 | **imagegen-frontend-mobile** | Generates premium mobile app screen concepts and flows. iOS, Android, and cross-platform. Clean hierarchy, phone mockup framing, controlled palettes, and strong multi-screen consistency. Lives in `imagegen-skills/frontend-mobile/`. |
+| **brandkit** | Generates premium brand-kit overview images with logo concepts, color systems, typography, mockups, and visual identity boards. Works for any category: tech, luxury, wellness, developer tools, and more. Lives in `imagegen-skills/brandkit/`. |
 
 ### Which one should I use?
 
