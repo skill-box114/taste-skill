@@ -6,7 +6,7 @@
   </a>
 </p>
 
-Portable **Agent Skills** that raise the bar for AI-built interfaces: premium layout, typography, motion, and spacing instead of generic templates. The repo also includes **image-only skills** for strong reference frames (web, mobile apps, brand kits). They pair well with **ChatGPT Images** and other high-quality image models—generate a screen or board, then hand it to Codex, Cursor, or Claude Code to ship real code.
+Portable **Agent Skills** that raise the bar for AI-built interfaces: premium layout, typography, motion, and spacing instead of generic templates. The repo also includes **image-only skills** for strong reference frames (web, mobile apps, brand kits). They pair well with **ChatGPT Images** and other high-quality image models: generate a screen or board, then hand it to Codex, Cursor, or Claude Code to ship real code.
 
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-Compatible-blue?style=flat-square)](https://github.com/vercel-labs/agent-skills)
 [![GitHub stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat-square&color=yellow)](https://github.com/Leonxlnx/taste-skill/stargazers)
@@ -26,7 +26,7 @@ We would love your feedback. Suggestions and bug reports:
 
 ## Installing
 
-The [`npx skills add`](https://github.com/vercel-labs/agent-skills) CLI scans the `skills/` folder in this repo, so **all skills below—code and image-generation—install the same way.**
+The [`npx skills add`](https://github.com/vercel-labs/agent-skills) CLI scans the `skills/` folder in this repo, so **all skills below (code and image-generation) install the same way.**
 
 ```bash
 npx skills add https://github.com/Leonxlnx/taste-skill
@@ -50,11 +50,11 @@ Each skill does one job; you do not need all of them at once. **Implementation s
 | **gpt-taste** | Stricter variant for GPT/Codex: higher layout variance, stronger GSAP direction, aggressive anti-slop. |
 | **image-to-code-skill** | Image-first pipeline: generate site references, analyze them, then implement the frontend to match. |
 | **redesign-skill** | Existing projects: audit the UI first, then fix layout, spacing, hierarchy, styling. |
-| **soft-skill** | Polished, calm, expensive UI—softer contrast, whitespace, premium fonts, spring motion. |
+| **soft-skill** | Polished, calm, expensive UI with softer contrast, whitespace, premium fonts, spring motion. |
 | **output-skill** | When the model ships half-finished work: full output, no placeholder comments. |
 | **minimalist-skill** | Editorial product UI (Notion/Linear vibes), restrained palette, crisp structure. |
 | **brutalist-skill** | ⚠️ `BETA` Hard mechanical language: Swiss type, sharp contrast, experimental layout. |
-| **stitch-skill** | Google Stitch–compatible rules, including optional `DESIGN.md` export format. |
+| **stitch-skill** | Google Stitch-compatible rules, including optional `DESIGN.md` export format. |
 
 ### Image generation skills
 
@@ -62,8 +62,8 @@ These produce design images only (no code). Use with ChatGPT Images, Codex image
 
 | Skill | Description |
 | --- | --- |
-| **imagegen-frontend-web** | Website comps: hero, landing, multi-section—strong typography, spacing, anti-slop art direction. |
-| **imagegen-frontend-mobile** | Mobile screens and flows: iOS/Android/cross‑platform, mockups, readable type, coherent sets. |
+| **imagegen-frontend-web** | Website comps: hero, landing, multi-section with strong typography, spacing, anti-slop art direction. |
+| **imagegen-frontend-mobile** | Mobile screens and flows: iOS/Android/cross-platform, mockups, readable type, coherent sets. |
 | **brandkit** | Brand-kit boards: logo directions, palettes, type, identity applications across categories. |
 
 ### Which one should I use?
@@ -82,15 +82,15 @@ For **image-to-code-skill**, state the pipeline in the prompt, e.g.: `follow the
 
 ### ChatGPT Images and Codex
 
-Attach or paste **`imagegen-frontend-web`**, **`imagegen-frontend-mobile`**, or **`brandkit`** and ask for the frames you need—then feed the renders to Codex, Cursor, or Claude Code. Use **image-to-code-skill** when you want one workflow that both generates references and implements the site in code.
+Attach or paste **`imagegen-frontend-web`**, **`imagegen-frontend-mobile`**, or **`brandkit`** and ask for the frames you need, then feed the renders to Codex, Cursor, or Claude Code. Use **image-to-code-skill** when you want one workflow that both generates references and implements the site in code.
 
 ## Settings (taste-skill only)
 
-Numbers at the top of the file are 1–10 dials:
+Numbers at the top of the file are 1-10 dials:
 
-- **DESIGN_VARIANCE** — Layout experimentation (lower: centered/clean • higher: asymmetric/modern).  
-- **MOTION_INTENSITY** — Animation depth (lower: hover • higher: scroll/magnetic).  
-- **VISUAL_DENSITY** — Information per viewport (lower: spacious • higher: dense dashboards).
+- **DESIGN_VARIANCE**: Layout experimentation (lower: centered/clean · higher: asymmetric/modern).
+- **MOTION_INTENSITY**: Animation depth (lower: hover · higher: scroll/magnetic).
+- **VISUAL_DENSITY**: Information per viewport (lower: spacious · higher: dense dashboards).
 
 ## Examples
 
@@ -135,7 +135,7 @@ Background writing that shaped these skills lives in [`research/`](research/).
 ## Common Questions
 
 **How is this different from other AI design skills?**  
-Multiple specialized variants, adjustable dials in key skills, anti-repetition rules informed by dedicated research—all framework agnostic across major coding agents.
+Multiple specialized variants, adjustable dials in key skills, anti-repetition rules informed by dedicated research. All are framework agnostic across major coding agents.
 
 **Does it work with React, Vue, Svelte?**  
 Yes. Rules target design intent, not a single framework API.
