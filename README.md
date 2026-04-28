@@ -6,86 +6,91 @@
   </a>
 </p>
 
-A collection of skills that improve how AI tools write frontend code. Instead of generating generic, boring interfaces, the AI builds modern, premium designs with proper animations, spacing, and visual quality.
+Portable **Agent Skills** that raise the bar for AI-built interfaces: premium layout, typography, motion, and spacing instead of generic templates. The repo also includes **image-only skills** for strong reference frames (web, mobile apps, brand kits). They pair well with **ChatGPT Images** and other high-quality image models—generate a screen or board, then hand it to Codex, Cursor, or Claude Code to ship real code.
 
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-Compatible-blue?style=flat-square)](https://github.com/vercel-labs/agent-skills)
 [![GitHub stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat-square&color=yellow)](https://github.com/Leonxlnx/taste-skill/stargazers)
-[![AI Supported](https://img.shields.io/badge/AI_Supported-Codex_%7C_Cursor_%7C_Claude_Code-black?style=flat-square)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![AI Supported](https://img.shields.io/badge/AI_Supported-Codex_%7C_Cursor_%7C_Claude_Code-black?style=flat-square)](#installing)
 [![Premium UI](https://img.shields.io/badge/Design-Premium_Frontend-white?style=flat-square&color=gray)](#)
+
+<p align="center"><sub><a href="#installing">Install</a> · <a href="#skills">Skills</a> · <a href="#settings-taste-skill-only">Settings</a> · <a href="#examples">Examples</a> · <a href="#support-the-project">Sponsor</a> · <a href="#research">Research</a> · <a href="#common-questions">FAQ</a> · <a href="#license">License</a></sub></p>
 
 ## Feedback & Contributions
 
-I'd love to hear your thoughts! If you have suggestions or find any bugs:
+We would love your feedback. Suggestions and bug reports:
 
-- Open a Pull Request or Issue right here on GitHub
-- DM me on [x.com/lexnlin](https://x.com/lexnlin)
-- DM Blueemi on [x.com/blueemi99](https://x.com/blueemi99)
-- Email me at [support@tasteskill.dev](mailto:support@tasteskill.dev)
+- Open a Pull Request or Issue on GitHub  
+- DM [@lexnlin](https://x.com/lexnlin) or [@blueemi99](https://x.com/blueemi99)  
+- Email us at [hello@tasteskill.dev](mailto:hello@tasteskill.dev)
 
 ## Installing
 
-Works via CLI for all major AI coding agents (Cursor, Antigravity, Claude Code, Codex, Windsurf, Copilot, etc.):
+The [`npx skills add`](https://github.com/vercel-labs/agent-skills) CLI scans the `skills/` folder in this repo, so **all skills below—code and image-generation—install the same way.**
 
 ```bash
 npx skills add https://github.com/Leonxlnx/taste-skill
 ```
 
-Or just copy the `SKILL.md` file you need directly into your project or paste it into ChatGPT / Codex.
+Install a single skill by name (example):
+
+```bash
+npx skills add https://github.com/Leonxlnx/taste-skill --skill "imagegen-frontend-mobile"
+```
+
+You can also copy any `SKILL.md` into your project or paste it into ChatGPT / Codex conversations.
 
 ## Skills
 
-Each skill has a different job. You do not need to use all of them at once.
-
-Frontend implementation skills live in `skills/`.
-Image-generation-only skills live in `imagegen-skills/`.
+Each skill does one job; you do not need all of them at once. **Implementation skills** output code. **Image-generation skills** output reference images only.
 
 | Skill | Description |
 | --- | --- |
-| **taste-skill** | The default all-rounder. Use this when you want premium frontend output without forcing one narrow visual style. |
-| **gpt-taste** | The stricter, more opinionated variant for GPT/Codex models. Best for high-variance layouts, stronger GSAP direction, and more aggressive anti-slop rules. |
-| **image-to-code-skill** | The image-first frontend implementation skill. It generates premium website images first, deeply analyzes them, then implements the frontend to match closely. Lives in `skills/image-to-code-skill/`. |
-| **redesign-skill** | Use this when a project already exists and needs to be improved. It focuses on auditing the current UI first, then fixing weak layout, spacing, hierarchy, and styling decisions. |
-| **soft-skill** | Use this for polished, calm, expensive-looking interfaces with softer contrast, more whitespace, premium fonts, and smooth spring motion. |
-| **output-skill** | Use this when the model keeps being lazy. It pushes for complete output, no placeholder comments, and no skipped implementation steps. |
-| **minimalist-skill** | Use this for cleaner editorial product UI inspired by tools like Notion or Linear. It keeps the palette restrained and the structure crisp. |
-| **brutalist-skill** | ⚠️ `BETA` Use this for harder, more mechanical visual language: Swiss typography, sharp contrast, raw structure, and more experimental composition. |
-| **stitch-skill** | Use this when you want Google Stitch-compatible semantic design rules, including the extra `DESIGN.md` export format. |
+| **taste-skill** | Default all-rounder for premium frontend output without locking one narrow visual style. |
+| **gpt-taste** | Stricter variant for GPT/Codex: higher layout variance, stronger GSAP direction, aggressive anti-slop. |
+| **image-to-code-skill** | Image-first pipeline: generate site references, analyze them, then implement the frontend to match. |
+| **redesign-skill** | Existing projects: audit the UI first, then fix layout, spacing, hierarchy, styling. |
+| **soft-skill** | Polished, calm, expensive UI—softer contrast, whitespace, premium fonts, spring motion. |
+| **output-skill** | When the model ships half-finished work: full output, no placeholder comments. |
+| **minimalist-skill** | Editorial product UI (Notion/Linear vibes), restrained palette, crisp structure. |
+| **brutalist-skill** | ⚠️ `BETA` Hard mechanical language: Swiss type, sharp contrast, experimental layout. |
+| **stitch-skill** | Google Stitch–compatible rules, including optional `DESIGN.md` export format. |
 
-### Image Generation Skills
+### Image generation skills
 
-These skills generate design reference images only. They do not write code. Use them with ChatGPT, Codex, or any agent that supports image generation.
+These produce design images only (no code). Use with ChatGPT Images, Codex image mode, or any agent that generates images.
 
 | Skill | Description |
 | --- | --- |
-| **imagegen-frontend-web** | Generates premium website design reference images. Awwwards-level art direction, strong typography, generous spacing, and anti-slop visual discipline. Lives in `imagegen-skills/frontend-web/`. |
-| **imagegen-frontend-mobile** | Generates premium mobile app screen concepts and flows. iOS, Android, and cross-platform. Clean hierarchy, phone mockup framing, controlled palettes, and strong multi-screen consistency. Lives in `imagegen-skills/frontend-mobile/`. |
-| **brandkit** | Generates premium brand-kit overview images with logo concepts, color systems, typography, mockups, and visual identity boards. Works for any category: tech, luxury, wellness, developer tools, and more. Lives in `imagegen-skills/brandkit/`. |
+| **imagegen-frontend-web** | Website comps: hero, landing, multi-section—strong typography, spacing, anti-slop art direction. |
+| **imagegen-frontend-mobile** | Mobile screens and flows: iOS/Android/cross‑platform, mockups, readable type, coherent sets. |
+| **brandkit** | Brand-kit boards: logo directions, palettes, type, identity applications across categories. |
 
 ### Which one should I use?
 
-- Start with **taste-skill** if you want the safest general recommendation.
-- Use **gpt-taste** if you're using GPT/Codex models, you want a stronger visual opinion, more layout variance, and stricter motion/layout enforcement.
-- Use **image-to-code-skill** if visual quality is the main challenge and you want the image-first workflow: generate the design, inspect it deeply, then code it faithfully.
-- Use **redesign-skill** if the project already exists and you want to improve what is there instead of starting from scratch.
-- Use **soft-skill**, **minimalist-skill**, or **brutalist-skill** when you already know the visual direction you want.
-- Add **output-skill** when your agent tends to leave work unfinished.
-- Use **stitch-skill** when you specifically need Stitch-oriented output.
+- Start with **taste-skill** for the safest general default.  
+- Use **gpt-taste** when you want the stricter GPT/Codex-oriented rules and motion/layout enforcement.  
+- Use **image-to-code-skill** for image → analyze → code website workflows.  
+- Use **redesign-skill** to improve an existing codebase instead of greenfield styling.  
+- Add **soft-skill**, **minimalist-skill**, or **brutalist-skill** when the visual direction is already chosen.  
+- Add **output-skill** if the agent keeps truncating output.  
+- Use **imagegen-frontend-web**, **imagegen-frontend-mobile**, or **brandkit** when the deliverable is **images** (comps, flows, identity boards), then pass results to your coding agent.
 
-### Image-First Tip
+### Image-first tip
 
-For **image-to-code-skill**, it often helps to state the workflow explicitly in the prompt. A line like `follow rules strictly and generate images, then analyze, then code` can reinforce the intended execution order in agents that support both image generation and implementation.
+For **image-to-code-skill**, state the pipeline in the prompt, e.g.: `follow the skill: generate images, then analyze, then code`.
 
-### Using Image Generation Skills with ChatGPT / Codex
+### ChatGPT Images and Codex
 
-The image generation skills (`imagegen-frontend-web`, `imagegen-frontend-mobile`) work great with ChatGPT and Codex. Just paste or attach the skill file in your conversation and ask it to generate screens or website sections. The generated images can then be handed to your coding agent to turn them into code right away.
+Attach or paste **`imagegen-frontend-web`**, **`imagegen-frontend-mobile`**, or **`brandkit`** and ask for the frames you need—then feed the renders to Codex, Cursor, or Claude Code. Use **image-to-code-skill** when you want one workflow that both generates references and implements the site in code.
 
 ## Settings (taste-skill only)
 
-The taste skill has three settings at the top of the file. Change these numbers (1-10) depending on what you're building:
+Numbers at the top of the file are 1–10 dials:
 
-- **DESIGN_VARIANCE** — How experimental the layout is. (1-3: Clean/centered | 8-10: Asymmetric/modern)
-- **MOTION_INTENSITY** — How much animation there is. (1-3: Simple hover | 8-10: Magnetic/scroll-triggered)
-- **VISUAL_DENSITY** — How much content fits on one screen. (1-3: Spacious/luxury | 8-10: Dense dashboards)
+- **DESIGN_VARIANCE** — Layout experimentation (lower: centered/clean • higher: asymmetric/modern).  
+- **MOTION_INTENSITY** — Animation depth (lower: hover • higher: scroll/magnetic).  
+- **VISUAL_DENSITY** — Information per viewport (lower: spacious • higher: dense dashboards).
 
 ## Examples
 
@@ -98,7 +103,7 @@ Created with taste-skill:
 
 ## Support the project
 
-If you find **taste-skill** useful, consider sponsoring the development.
+If Taste Skill helps you, consider sponsoring:
 
 [Sponsor on GitHub](https://github.com/sponsors/Leonxlnx)
 
@@ -125,15 +130,22 @@ If you find **taste-skill** useful, consider sponsoring the development.
 
 ## Research
 
-Background research that informed how these skills were built. See the [research](research/) folder.
+Background writing that shaped these skills lives in [`research/`](research/).
 
 ## Common Questions
 
-**How is this different from other AI design skills?**
-Taste Skill includes multiple specialized variants for different use cases, a 3-dial parameterization system for adjustable output, and anti-repetition rules backed by original research. It is framework-agnostic and works across all major agents.
+**How is this different from other AI design skills?**  
+Multiple specialized variants, adjustable dials in key skills, anti-repetition rules informed by dedicated research—all framework agnostic across major coding agents.
 
-**Does it work with React, Vue, Svelte, etc.?**
-Yes. Taste Skill is framework-agnostic. The rules focus on design decisions, not framework-specific code patterns.
+**Does it work with React, Vue, Svelte?**  
+Yes. Rules target design intent, not a single framework API.
 
-**What is a SKILL.md file?**
-A portable instruction file that AI coding agents detect and follow automatically. No configuration is needed, just install it and your agent reads it.
+**What is SKILL.md?**  
+A portable instruction file agents can load automatically; install via `npx skills add` or by copying into a repo or conversation.
+
+**Do image-generation skills install with `npx skills add`?**  
+Yes. They live under `skills/` alongside the code skills so the same CLI discovers them.
+
+## License
+
+[MIT License](LICENSE) · Copyright (c) 2026 Leonxlnx
