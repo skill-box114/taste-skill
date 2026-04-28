@@ -14,7 +14,11 @@ Portable **Agent Skills** that raise the bar for AI-built interfaces: premium la
 [![AI Supported](https://img.shields.io/badge/AI_Supported-Codex_%7C_Cursor_%7C_Claude_Code-black?style=flat-square)](#installing)
 [![Premium UI](https://img.shields.io/badge/Design-Premium_Frontend-white?style=flat-square&color=gray)](#)
 
-<p align="center"><sub><a href="#installing">Install</a> · <a href="#skills">Skills</a> · <a href="#settings-taste-skill-only">Settings</a> · <a href="#examples">Examples</a> · <a href="#support-the-project">Sponsor</a> · <a href="#research">Research</a> · <a href="#common-questions">FAQ</a> · <a href="#license">License</a></sub></p>
+## Disclaimer
+
+Taste Skill has no official token, coin, or crypto project. Any token using my name, image, or project is unaffiliated and not endorsed by me.
+
+<p align="center"><sub><a href="#disclaimer">Disclaimer</a> · <a href="#installing">Install</a> · <a href="#skills">Skills</a> · <a href="#settings-taste-skill-only">Settings</a> · <a href="#examples">Examples</a> · <a href="#support-the-project">Sponsor</a> · <a href="#research">Research</a> · <a href="#common-questions">FAQ</a> · <a href="#license">License</a></sub></p>
 
 ## Feedback & Contributions
 
