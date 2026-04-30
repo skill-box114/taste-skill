@@ -4,19 +4,24 @@
 
 # Taste Skill
 
-<p>
-  <a href="https://tasteskill.dev">
-    <img src="https://img.shields.io/badge/Official_Website-tasteskill.dev-black?style=for-the-badge&logo=vercel" alt="Official Website" />
+<p align="center">
+  <a href="https://tasteskill.dev" title="Official website · tasteskill.dev">
+    <img src="assets/taste-skill-mark.svg" width="52" height="52" alt="Taste Skill logo" />
+    <br />
+    <strong>tasteskill.dev</strong><br />
+    <sub>Official docs & installs</sub>
   </a>
 </p>
 
 Portable **Agent Skills** that raise the bar for AI-built interfaces: premium layout, typography, motion, and spacing instead of generic templates. The repo also includes **image-only skills** for strong reference frames (web, mobile apps, brand kits). They pair well with **ChatGPT Images** and other high-quality image models: generate a screen or board, then hand it to Codex, Cursor, or Claude Code to ship real code.
 
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-Compatible-blue?style=flat-square)](https://github.com/vercel-labs/agent-skills)
-[![GitHub stars](https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=flat-square&color=yellow)](https://github.com/Leonxlnx/taste-skill/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
-[![AI Supported](https://img.shields.io/badge/AI_Supported-Codex_%7C_Cursor_%7C_Claude_Code-black?style=flat-square)](#installing)
-[![Premium UI](https://img.shields.io/badge/Design-Premium_Frontend-white?style=flat-square&color=gray)](#)
+<p align="center">
+<a href="https://github.com/vercel-labs/agent-skills"><img src="https://img.shields.io/badge/Agent%20skills-Compatible-2563eb?style=for-the-badge&labelColor=1e293b" alt="Agent Skills compatible"/></a>
+<a href="https://github.com/Leonxlnx/taste-skill/stargazers"><img src="https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=for-the-badge&logo=github&label=Stars&labelColor=1e293b&color=fbbf24" alt="GitHub stars"/></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-fbbf24?style=for-the-badge&labelColor=1e293b" alt="MIT License"/></a>
+<a href="#installing"><img src="https://img.shields.io/badge/Support-Codex%20%C2%B7%20Cursor%20%C2%B7%20Claude-111827?style=for-the-badge&labelColor=1e293b" alt="Codex Cursor Claude"/></a>
+<a href="#skills"><img src="https://img.shields.io/badge/Design-Premium%20frontend-a78bfa?style=for-the-badge&labelColor=1e293b" alt="Premium frontend"/></a>
+</p>
 
 ## Disclaimer
 
