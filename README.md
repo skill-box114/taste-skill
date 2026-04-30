@@ -5,22 +5,28 @@
 # Taste Skill
 
 <p align="center">
-  <a href="https://tasteskill.dev" title="Official website · tasteskill.dev">
-    <img src="assets/taste-skill-mark.svg" width="52" height="52" alt="Taste Skill logo" />
-    <br />
-    <strong>tasteskill.dev</strong><br />
-    <sub>Official docs & installs</sub>
+  <em>The Anti-Slop Frontend Framework for AI Agents</em>
+</p>
+
+<p align="center">
+  <a href="https://tasteskill.dev" title="Taste Skill — tasteskill.dev">
+    <img src="assets/taste-skill-logo.webp" width="80" height="80" alt="Taste Skill" />
   </a>
 </p>
 
-Portable **Agent Skills** that raise the bar for AI-built interfaces: premium layout, typography, motion, and spacing instead of generic templates. The repo also includes **image-only skills** for strong reference frames (web, mobile apps, brand kits). They pair well with **ChatGPT Images** and other high-quality image models: generate a screen or board, then hand it to Codex, Cursor, or Claude Code to ship real code.
+<p align="center">
+  <a href="https://tasteskill.dev">
+    <img src="https://img.shields.io/badge/OPEN-tasteskill.dev-%23a855f7?style=for-the-badge&labelColor=%230f172a" alt="Open tasteskill.dev" />
+  </a>
+</p>
+
+Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.
 
 <p align="center">
-<a href="https://github.com/vercel-labs/agent-skills"><img src="https://img.shields.io/badge/Agent%20skills-Compatible-2563eb?style=for-the-badge&labelColor=1e293b" alt="Agent Skills compatible"/></a>
-<a href="https://github.com/Leonxlnx/taste-skill/stargazers"><img src="https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=for-the-badge&logo=github&label=Stars&labelColor=1e293b&color=fbbf24" alt="GitHub stars"/></a>
+<a href="https://github.com/Leonxlnx/taste-skill/stargazers"><img src="https://img.shields.io/github/stars/Leonxlnx/taste-skill?style=for-the-badge&logo=github&labelColor=1e293b&color=fbbf24" alt="GitHub stars"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-fbbf24?style=for-the-badge&labelColor=1e293b" alt="MIT License"/></a>
-<a href="#installing"><img src="https://img.shields.io/badge/Support-Codex%20%C2%B7%20Cursor%20%C2%B7%20Claude-111827?style=for-the-badge&labelColor=1e293b" alt="Codex Cursor Claude"/></a>
-<a href="#skills"><img src="https://img.shields.io/badge/Design-Premium%20frontend-a78bfa?style=for-the-badge&labelColor=1e293b" alt="Premium frontend"/></a>
+<a href="#installing"><img src="https://img.shields.io/badge/Tools-Codex%20%C2%B7%20Cursor%20%C2%B7%20Claude-111827?style=for-the-badge&labelColor=1e293b" alt="Supported agents"/></a>
+<a href="https://www.tasteskill.dev/changelog"><img src="https://img.shields.io/badge/Changelog-Latest-059669?style=for-the-badge&labelColor=1e293b" alt="Changelog on tasteskill.dev"/></a>
 </p>
 
 ## Disclaimer
