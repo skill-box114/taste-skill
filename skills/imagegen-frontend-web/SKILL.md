@@ -1,6 +1,25 @@
 ---
 name: imagegen-frontend-web
-description: Elite frontend image-direction skill for generating premium, conversion-aware website design references. Outputs ONE horizontal image PER section (separately generated) so each frame is a focused, high-fidelity reference. Enforces composition variety (not always left-text / right-image), background-image freedom, varied CTAs, varied hero scales (giant / mid / mini minimalist), narrative concept spine, second-read moments, and a single consistent palette across all images. Optimized for landing pages, marketing sites, and product comps that developers or coding models can accurately recreate.
+description: Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE separate horizontal image FOR EVERY section. A landing page with 8 sections produces 8 images. Never compress multiple sections into one image. Enforces composition variety (not always left-text / right-image), background-image freedom, varied CTAs, varied hero scales (giant / mid / mini minimalist), narrative concept spine, second-read moments, and a single consistent palette across all images. Optimized for landing pages, marketing sites, and product comps that developers or coding models can accurately recreate.
+---
+
+# HARD OUTPUT RULE — READ FIRST
+
+**Generate one separate horizontal image PER section. Always. No exceptions.**
+
+- 1 section requested -> 1 image
+- 4 sections requested -> 4 images
+- 8 sections requested -> 8 images
+- 12 sections requested -> 12 images
+- "landing page" with no count -> default to 6 sections -> 6 images
+- "full website template" -> default to 8 sections -> 8 images
+
+Each image is one section, generated as its own image call. Never combine multiple sections into one frame. Never return a single tall image that contains the whole page.
+
+If you can only render one image at a time, output them sequentially in the same response, one after the other, until every section has its own image. Announce each one ("Section 1 of 8: Hero", "Section 2 of 8: Trust bar", etc.).
+
+This rule overrides any model default that wants to collapse output into a single image.
+
 ---
 
 # CORE DIRECTIVE: AWWWARDS-LEVEL IMAGE ART DIRECTION
@@ -337,7 +356,24 @@ instead.
 ---
 
 ## 5. IMAGE COUNT & PAGE SLICING
-Generate **ONE horizontal image per section**, generated **separately**. Never combine multiple sections in a single image.
+
+### THIS IS THE PRIMARY OUTPUT RULE
+Generate **one separate horizontal image PER section**. Always.
+
+- never combine multiple sections in a single image
+- never return a single tall slice that contains the whole page
+- never return one "best" image and skip the rest
+- never replace several sections with one collage
+
+If the request is ambiguous about section count, **default high**:
+- "hero" -> 1 image
+- "landing page" / "site template" -> default to 6 sections -> 6 images
+- "full website" -> default to 8 sections -> 8 images
+- "marketing site" -> default to 8 sections -> 8 images
+- "product page" -> default to 6 sections -> 6 images
+- "portfolio" -> default to 6 sections -> 6 images
+
+If the model can only render one image per call, generate them **sequentially in the same response**, one after the other, labeled "Section X of N: <name>" until the full set is delivered.
 
 ### Format
 - Always horizontal (16:9, 16:10, or 21:9 depending on density)
@@ -787,8 +823,9 @@ Before finalizing, verify internally:
 17. Is there a clear conversion path (hook -> proof -> action) even in artistic sites?
 18. Is the palette consistent across all per-section images?
 19. Is each image horizontal and one-section-only?
+20. Is the **total number of images equal to the number of sections** (never fewer)?
 
-If not, refine internally before output.
+If not, refine internally before output. If the count is wrong, regenerate the missing sections.
 
 ---
 
@@ -837,20 +874,21 @@ For minimalist briefs: this rule is suspended. Restraint is the design.
 ## 19. RESPONSE BEHAVIOR
 When the user asks for a frontend design:
 1. infer site type and primary conversion goal
-2. infer number of sections
-3. plan ONE horizontal image PER SECTION (separate generations)
-4. choose Hero Scale for the whole site (giant / mid / mini)
+2. infer number of sections (if unclear, use the defaults from §5: landing page = 6, full website = 8)
+3. **commit out loud** to the section count and announce it ("Generating N horizontal images, one per section")
+4. plan ONE horizontal image PER SECTION — always separate generations, never collapse
+5. choose Hero Scale for the whole site (giant / mid / mini)
 5. choose a strong visual combination (theme, type, hero arch, section system, motion, narrative spine, second-read moment)
-6. for each section: pick a Composition Anchor, Background Mode, and CTA Variation — vary across sections
-7. choose 4 signature components used appropriately across sections
-8. enforce hero minimalism + section size variety (some giant, some mini)
-9. enforce strong image usage including full-bleed backgrounds where it fits
-10. lock one consistent palette across all images
-11. apply §18 EXTRA CREATIVITY & IMPLEMENTATION EDGE
-12. keep spacing generous, even, and clean
-13. remove AI slop (including marquee / fake KPI clichés unless requested)
-14. run §17 CLARITY CHECK
-15. generate the per-section horizontal images one by one
+7. for each section: pick a Composition Anchor, Background Mode, and CTA Variation — vary across sections
+8. choose 4 signature components used appropriately across sections
+9. enforce hero minimalism + section size variety (some giant, some mini)
+10. enforce strong image usage including full-bleed backgrounds where it fits
+11. lock one consistent palette across all images
+12. apply §18 EXTRA CREATIVITY & IMPLEMENTATION EDGE
+13. keep spacing generous, even, and clean
+14. remove AI slop (including marquee / fake KPI clichés unless requested)
+15. run §17 CLARITY CHECK
+16. **generate every per-section horizontal image, labeled "Section X of N: <name>"**, until the full set is delivered. Do not stop early. Do not summarize. Do not return only one image.
 
 Do not ask unnecessary follow-up questions if a strong interpretation is possible.
 
