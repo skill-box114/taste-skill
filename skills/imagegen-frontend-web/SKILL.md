@@ -1,6 +1,6 @@
 ---
 name: imagegen-frontend-web
-description: Elite frontend image-direction skill for generating premium, artistic, implementation-friendly website design references. Uses combinatorial variation plus a narrative “concept spine” and second-read visual moments so outputs stay memorable—not template swaps. Enforces cinematic hero minimalism, strong hierarchy, generous spacing, image-led composition, and anti-slop visual discipline. Optimized for hero sections, landing pages, and multi-section site comps that developers or coding models can accurately recreate.
+description: Elite frontend image-direction skill for generating premium, conversion-aware website design references. Outputs ONE horizontal image PER section (separately generated) so each frame is a focused, high-fidelity reference. Enforces composition variety (not always left-text / right-image), background-image freedom, varied CTAs, varied hero scales (giant / mid / mini minimalist), narrative concept spine, second-read moments, and a single consistent palette across all images. Optimized for landing pages, marketing sites, and product comps that developers or coding models can accurately recreate.
 ---
 
 # CORE DIRECTIVE: AWWWARDS-LEVEL IMAGE ART DIRECTION
@@ -51,6 +51,10 @@ Default to website design comps.
   `(1 = mostly typographic, 10 = strongly image-led)`
 - SPACING_GENEROSITY: 8
   `(1 = compact / tight, 10 = very spacious / breathable)`
+- LAYOUT_VARIATION: 8
+  `(1 = same anchor repeats, 10 = bold composition variety across sections)`
+- CONVERSION_DISCIPLINE: 8
+  `(1 = pure art moodboard, 10 = clear funnel + premium design balance)`
 
 AI Instruction:
 Use these as global defaults unless the user clearly asks for something else.
@@ -63,9 +67,11 @@ Interpretation:
 - If the user says "premium SaaS", keep clarity high and art direction controlled.
 - If the user says "editorial", allow stronger type and more asymmetry.
 - Bias toward stronger visual concepts, not safe layouts.
-- Use imagery as a core design material, not as decoration.
+- Use imagery as a core design material — including as **full-bleed backgrounds**, not only as inline assets.
+- Vary composition: do not default to "text left, image right". Move text to bottom-left, center, top-right, etc. across sections.
 - Keep sections breathable. Do not over-pack the page.
 - Prefer slightly more whitespace between sections than default.
+- Stay conversion-aware: every section has a job (hook / proof / educate / convert).
 
 ---
 
@@ -146,6 +152,64 @@ Choose exactly 2:
 - smooth accordion expansion energy
 - cinematic fade-through energy
 
+### Composition Anchor (per-section)
+Default away from "always text-left, image-right". Each section picks 1 anchor; across the site at least 3 different anchors must appear.
+- Centered statement
+- Top-left lead, support bottom-right
+- Bottom-left text over background image
+- Bottom-right CTA cluster
+- Left-third caption + right-two-thirds visual
+- Right-third caption + left-two-thirds visual
+- Centered low (text in lower 40% over hero image)
+- Off-grid editorial offset (asymmetric pull)
+- Stacked center (label / headline / sub / CTA all centered, ultra minimalist)
+
+### Background Mode (per-section)
+Pick 1 per section; vary across the page so it is never all the same mode.
+- Solid surface with inline asset
+- Subtle texture / paper / grid as background
+- Full-bleed image background with tonal overlay (text remains highly readable)
+- Editorial side-image (50/50, 60/40, 40/60 — invertible)
+- Image as the entire visual + text overlaid in a clean safe area
+- Flat color block + small product / detail crop as accent
+
+### CTA Variation
+Pick the CTA style that fits each section, not a default pill every time:
+- Classic primary pill
+- Outline / ghost
+- Underlined inline link with arrow
+- Banner-style full-width CTA
+- Oversized headline + tiny CTA hint
+- CTA as caption under a strong visual
+
+Across the site, vary CTA style at least once. The page's primary action stays unmistakable.
+
+### Hero Scale (per-page)
+Pick 1 — must match brand mood:
+- Giant Statement Hero (massive type, large image, dominant first viewport)
+- Mid Editorial Hero (balanced type/image, cinematic but not screen-filling)
+- Mini Minimalist Hero (tiny logo + short statement + thin CTA, almost no image, lots of negative space)
+
+Mini does not mean weak — it means confident restraint.
+
+### Narrative / Concept Spine
+Pick 1 and let it thread through visuals and short copy across the page.
+- Artifact / collectible — proof, specimen, treasured object framing
+- Journey / pilgrimage — directional flow, waypoint sections, roadmap feeling
+- Tool / precision instrument — machined detail, calibrated UI, tactile controls
+- Living system / garden — organic growth metaphor, branching layout, nurtured tone
+- Stage / spotlight — theatrical contrast, performer + audience framing
+- Archive / dossier — indexed rows, captions, understated authority
+
+### Second-Read Moment
+Pick exactly 1 unobvious but legible motif and place it deliberately, once across the page:
+- asymmetric bleed that still respects hierarchy
+- one oversized punctuation or numeral serving structure
+- a single unexpected material switch (paper vs gloss vs metal accent)
+- a narrow vertical side-rail editorial note style
+- a macro crop that carries brand color naturally
+Avoid gimmick-for-gimmick: the moment must aid scan order or brand recall.
+
 Important:
 These are not coding instructions.
 They are visual-direction cues the generated design should imply.
@@ -218,38 +282,39 @@ instead.
 ---
 
 ## 5. IMAGE COUNT & PAGE SLICING
-When the user asks for a frontend design, decide image count based on section count.
+Generate **ONE horizontal image per section**, generated **separately**. Never combine multiple sections in a single image.
 
-### Single-section requests
-If the user asks for one section only:
-- generate exactly 1 image
+### Format
+- Always horizontal (16:9, 16:10, or 21:9 depending on density)
+- Each image renders one focused section in high fidelity
+- Hero usually 16:9 or 21:9; narrower content sections may be 16:10
 
-### Multi-section requests
-Use this rule:
-- 1-2 sections -> 1 image
-- 3-4 sections -> 1 tall vertical image
-- 5-8 sections -> 2 tall vertical images
-- 9-12 sections -> 3 tall vertical images
-- 13-16 sections -> 4 tall vertical images
+### Counting rule
+- 1 section -> 1 horizontal image
+- 4 sections -> 4 horizontal images
+- 8 sections -> 8 horizontal images
+- 12 sections -> 12 horizontal images
+
+Do not collapse multiple sections into one tall slice. Section size and density may still vary, but the canvas stays horizontal and **one section per frame**.
+
+### Section size variety
+Across the site, mix section ambition deliberately:
+- some sections are large, content-rich, art-directed
+- some sections are mini, ultra minimalist, mostly negative space
+- some sections are medium editorial blocks
+
+This rhythm creates a premium scrollscape, not uniform slabs.
 
 ### Continuity Rule
-If multiple images are used:
-- treat them as one single website
-- same palette
-- same typography logic
-- same button style
-- same card language
-- same border radius logic
-- same image treatment
-- same overall brand world
+Across all per-section images, enforce one brand world:
+- same palette and accent logic
+- same typography family and scale
+- same CTA family (style variations are fine, identity is not)
+- same border radius language
+- same image treatment (color grade, materials, framing)
+- same tonal voice in any short copy
 
-Each image must feel like the continuation of the previous one.
-
-### Portrait Preference
-For multi-section outputs:
-- prefer vertical compositions
-- make each image feel like a realistic page slice
-- do not hide layout structure in ultra-wide compositions
+A viewer scrolling through all frames must read them as one site.
 
 ---
 
@@ -511,7 +576,19 @@ Do not let spacing become random.
 ## 13. COLOR & MATERIAL RULES
 
 ### Palette Discipline
-Use one controlled palette with one or two accents at most.
+Use one controlled palette across the entire site:
+- 1 primary (brand anchor)
+- 1 secondary (supporting tone)
+- 1 accent (used sparingly for CTA / highlight)
+- a neutral scale (background, surface, text, hairline)
+
+Section-level mood shifts must reuse the same palette — no full theme swap per section.
+
+### Background-image harmony
+When using full-bleed image backgrounds:
+- the image must tonally match the palette (not fight it)
+- use overlays (dark, light, or color tint) to keep text fully readable
+- the brand accent stays consistent regardless of background image
 
 ### Strong guidance
 - avoid rainbow randomness
@@ -588,16 +665,22 @@ Avoid:
 ---
 
 ## 16. MULTI-IMAGE CONSISTENCY RULE
-For multi-image sites, enforce:
+Because every section is its own image, consistency is critical. Across all per-section frames enforce:
 - same brand world
 - same type scale logic
 - same spacing discipline
-- same CTA styling
+- same CTA family (style variations are fine, identity is not)
 - same icon or illustration mood
-- same image treatment
-- same tonal language
+- same image treatment (grade, framing, material vocabulary)
+- same tonal language in any copy
 
-Image 2 and 3 must not drift into a different site.
+Variation IS allowed in:
+- composition anchor (per section)
+- background mode (per section)
+- section size and density
+- which "second-read" moment appears
+
+A viewer flipping through every per-section frame must still recognize one brand. Anything that breaks brand recall is over-variation.
 
 ---
 
@@ -617,7 +700,12 @@ Before finalizing, verify internally:
 11. Does the creativity feel intentional and premium (concept spine visible, not cluttered)?
 12. Is the spacing between sections even and controlled?
 13. Do smaller sections still have enough surrounding space to feel clean?
-14. Is there exactly one disciplined “second-read” moment supporting scan order?
+14. Is there exactly one disciplined "second-read" moment supporting scan order?
+15. Is composition varied across sections (anchors and background modes mixed)?
+16. Is the hero scale (giant / mid / mini) chosen and executed cleanly?
+17. Is there a clear conversion path (hook -> proof -> action) even in artistic sites?
+18. Is the palette consistent across all per-section images?
+19. Is each image horizontal and one-section-only?
 
 If not, refine internally before output.
 
@@ -645,24 +733,40 @@ When the brief names an industry or region, steer palette and typographic temper
 ### Mobile-implied fidelity (even for desktop mocks)
 Maintain tap-friendly hit sizes and readable caption sizes visually; stacking order should imply a sane single-column narrative.
 
+### Conversion focus
+Each section has a job. Even when the design is artistic, the page must read as a real product or brand site:
+- the hero communicates value in seconds and offers one obvious next action
+- proof sections (logos, quotes, metrics) feel earned, not stuffed
+- pricing or CTA sections feel decisive, not buried
+- the final section closes: a single strong CTA + supporting trust cue
+Avoid pure mood reels with no funnel logic.
+
+### Composition variety check
+Across all per-section images, internally log the chosen composition anchor and background mode. Reject the set if:
+- the same composition anchor repeats more than 2 sections in a row
+- the same background mode repeats more than 3 sections in a row
+- every section is inline-asset (no full-bleed background ever appears)
+Push for at least one full-bleed image background and at least one mini minimalist section in any multi-section site.
+
 ---
 
 ## 19. RESPONSE BEHAVIOR
 When the user asks for a frontend design:
-1. infer site type
+1. infer site type and primary conversion goal
 2. infer number of sections
-3. choose image count
-4. choose a strong visual combination (including Narrative spine + Second-read moment + combinator picks)
-5. choose 4 signature components
-6. choose 2 motion-implied cues
-7. enforce hero minimalism
-8. enforce strong image usage
-9. apply §18 EXTRA CREATIVITY & IMPLEMENTATION EDGE
-10. increase creativity without adding clutter
-11. keep section spacing generous, even, and clean
-12. remove AI slop (including marquee / fake KPI clichés unless requested)
-13. run §17 CLARITY CHECK
-14. generate the design image(s)
+3. plan ONE horizontal image PER SECTION (separate generations)
+4. choose Hero Scale for the whole site (giant / mid / mini)
+5. choose a strong visual combination (theme, type, hero arch, section system, motion, narrative spine, second-read moment)
+6. for each section: pick a Composition Anchor, Background Mode, and CTA Variation — vary across sections
+7. choose 4 signature components used appropriately across sections
+8. enforce hero minimalism + section size variety (some giant, some mini)
+9. enforce strong image usage including full-bleed backgrounds where it fits
+10. lock one consistent palette across all images
+11. apply §18 EXTRA CREATIVITY & IMPLEMENTATION EDGE
+12. keep spacing generous, even, and clean
+13. remove AI slop (including marquee / fake KPI clichés unless requested)
+14. run §17 CLARITY CHECK
+15. generate the per-section horizontal images one by one
 
 Do not ask unnecessary follow-up questions if a strong interpretation is possible.
 
@@ -671,39 +775,38 @@ Do not ask unnecessary follow-up questions if a strong interpretation is possibl
 ## 20. EXAMPLE INTERPRETATIONS
 
 ### Example 1
-User:
-"make a hero section for an AI startup"
+User: "make a hero section for an AI startup"
 
 Interpretation:
-- 1 image
-- theme likely Deep Dark or Bold Studio Solid
-- hero architecture likely Asymmetric Split or Inline Typography Behemoth
-- concise statement headline
-- clear CTA
-- premium product visual
-- no cliche dashboard spam
+- 1 horizontal image
+- Hero Scale: Mid Editorial or Giant Statement
+- Composition Anchor: bottom-left text over full-bleed product/atmosphere image
+- Background Mode: full-bleed image with dark tonal overlay
+- CTA Variation: outlined inline + small label hint
+- Palette: Deep Dark or Bold Studio Solid, one consistent accent
+- no cliche dashboard spam, no purple AI glow
 
 ### Example 2
-User:
-"design 8 sections for a fintech website"
+User: "design 8 sections for a fintech website"
 
 Interpretation:
-- 2 tall vertical images
-- Swiss or modular structure
-- strong trust and clarity
-- controlled palette
-- high implementation clarity
+- 8 separate horizontal images (one per section)
+- Hero Scale: Mid Editorial (trust-driven)
+- vary Composition Anchor across sections (centered low, right-third caption, bottom-left over chart visual, stacked center for closing CTA)
+- Background Mode mix: solid surface, full-bleed image background once, editorial side-image at use cases
+- one consistent palette (e.g. ink + paper + single brand accent)
+- conversion path: hook -> proof bar -> features -> use case -> testimonial -> pricing -> FAQ -> final CTA
 
 ### Example 3
-User:
-"creative agency landing page, 12 sections"
+User: "creative agency landing page, 12 sections"
 
 Interpretation:
-- 3 tall vertical images
-- editorial or poster-like direction
-- stronger typography
-- more asymmetry
-- still readable and clearly codeable
+- 12 horizontal images (one per section)
+- Hero Scale: Giant Statement OR Mini Minimalist (decisive choice, not in-between)
+- editorial / poster-like direction; off-grid composition appears 2-3 times
+- multiple Background Modes (full-bleed image at hero + showcase, editorial side-image at case studies, solid + accent for process)
+- palette consistent throughout, with one bold accent recurring
+- closing CTA section: mini minimalist, strong type, single primary action
 
 ---
 
