@@ -13,7 +13,7 @@ All notable changes to taste-skill live here. The repo follows SemVer-ish discip
 
 ---
 
-## v2 (experimental) — the new default for `taste-skill`
+## v2 (experimental) - the new default for `taste-skill`
 
 v2 (experimental) is a substantial rewrite of the original taste-skill. It keeps the dial-driven philosophy (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`) and adds structure, hard rules, and concrete implementation patterns the agent can actually follow.
 
@@ -23,17 +23,17 @@ v2 (experimental) is a substantial rewrite of the original taste-skill. It keeps
 
 **New sections**
 
-- **§0 Brief Inference** — before any code, the agent reads the room (page kind, vibe words, references, audience, constraints) and declares a one-line design read. Anti-default discipline.
-- **§2 Brief → Design System Map** — when a brief reads as Material / Fluent / Carbon / Polaris / Atlassian / Primer / GOV.UK / USWDS / Bootstrap / Radix / shadcn / Tailwind, reach for the **official** package. When the brief is an aesthetic (glassmorphism, bento, brutalism, editorial, dark tech, aurora, kinetic typography), use web standards and label the implementation honestly. Apple Liquid Glass is documented as an approximation, not an official package.
-- **§8 Dark Mode Protocol** — dual-mode by default, token strategy declared per project, contrast and hierarchy parity enforced.
-- **§11 Redesign Protocol** — mode detection (Greenfield / Preserve / Overhaul), audit before touching, modernisation levers in priority order, what never changes silently (URL structure, nav labels, form field names, brand wordmark, legal copy).
-- **§12 The Block Library (Contract)** — schema for iteratively adding real, source-backed block implementations (hero, feature, social-proof, pricing, cta, footer, portfolio, transition, navigation).
-- **§13 Out of Scope** — explicit list of what taste-skill is NOT for (dashboards, data tables, multi-step forms, code editors, native mobile, realtime collab UIs).
-- **§14 Final Pre-Flight Check** — hard checklist. Every box must honestly pass before shipping.
+- **§0 Brief Inference** - before any code, the agent reads the room (page kind, vibe words, references, audience, constraints) and declares a one-line design read. Anti-default discipline.
+- **§2 Brief → Design System Map** - when a brief reads as Material / Fluent / Carbon / Polaris / Atlassian / Primer / GOV.UK / USWDS / Bootstrap / Radix / shadcn / Tailwind, reach for the **official** package. When the brief is an aesthetic (glassmorphism, bento, brutalism, editorial, dark tech, aurora, kinetic typography), use web standards and label the implementation honestly. Apple Liquid Glass is documented as an approximation, not an official package.
+- **§8 Dark Mode Protocol** - dual-mode by default, token strategy declared per project, contrast and hierarchy parity enforced.
+- **§11 Redesign Protocol** - mode detection (Greenfield / Preserve / Overhaul), audit before touching, modernisation levers in priority order, what never changes silently (URL structure, nav labels, form field names, brand wordmark, legal copy).
+- **§12 The Block Library (Contract)** - schema for iteratively adding real, source-backed block implementations (hero, feature, social-proof, pricing, cta, footer, portfolio, transition, navigation).
+- **§13 Out of Scope** - explicit list of what taste-skill is NOT for (dashboards, data tables, multi-step forms, code editors, native mobile, realtime collab UIs).
+- **§14 Final Pre-Flight Check** - hard checklist. Every box must honestly pass before shipping.
 
 **Hardened bans (Section 9, "AI Tells")**
 
-- **§9.G Em-Dash Ban (complete)** — zero em-dashes (`—`) anywhere on the page. Headlines, eyebrows, pills, body copy, quotes, attribution, captions, button text, alt text. Use a hyphen (`-`) or restructure the sentence. This was the single most-violated stylistic Tell in pre-v2 testing.
+- **§9.G Em-Dash Ban (complete)** - zero em-dashes (`—`) anywhere on the page. Headlines, eyebrows, pills, body copy, quotes, attribution, captions, button text, alt text. Use a hyphen (`-`) or restructure the sentence. This was the single most-violated stylistic Tell in pre-v2 testing.
 - Section numbering eyebrows (`00 / INDEX`, `001 · Capabilities`, `06 · how it works`) banned outright.
 - Version labels in hero (`V0.6`, `INVITE-ONLY PREVIEW`, `BETA`) banned unless the brief is explicitly a product launch.
 - Photo-credit captions as decoration (`Field study no. 12 · Ines Caetano`) banned unless real attribution.
@@ -51,28 +51,28 @@ v2 (experimental) is a substantial rewrite of the original taste-skill. It keeps
 
 **Hardened design rules**
 
-- **Color Consistency Lock** — one accent across the whole page; no random color swaps in section 7.
-- **Shape Consistency Lock** — one corner-radius system per page.
-- **Button Contrast Check** — every CTA passes WCAG AA contrast (no white-on-white).
-- **Hero Discipline** — headline ≤ 2 lines, subtext ≤ 20 words and ≤ 4 lines, CTAs visible without scroll, font scale planned with image size.
-- **Navigation** — single line at desktop, height ≤ 80px.
+- **Color Consistency Lock** - one accent across the whole page; no random color swaps in section 7.
+- **Shape Consistency Lock** - one corner-radius system per page.
+- **Button Contrast Check** - every CTA passes WCAG AA contrast (no white-on-white).
+- **Hero Discipline** - headline ≤ 2 lines, subtext ≤ 20 words and ≤ 4 lines, CTAs visible without scroll, font scale planned with image size.
+- **Navigation** - single line at desktop, height ≤ 80px.
 - **"Used by / Trusted by"** logo wall lives UNDER the hero, uses real SVG logos (Simple Icons / devicon), never plain text wordmarks.
-- **Section-Layout-Repetition Ban** — across 8 sections, at least 4 different layout families.
-- **Bento Cell Count Rule** — N items = exactly N cells; no empty middle or trailing cells.
-- **Page Theme Lock** — one theme (light / dark / auto) for the whole page; no mid-page light/dark flips.
-- **Italic Descender Clearance** — italic display words with `y g j p q` need `leading-[1.1]` minimum and `pb-1` reserve.
-- **Long lists need a different UI component** — `<ul>` + `divide-y` for > 5 items is the lazy default; reach for cards / tabs / marquee / carousel / scroll-snap pills.
-- **Long-list-divider-overuse banned** — no `border-t` + `border-b` on every row.
+- **Section-Layout-Repetition Ban** - across 8 sections, at least 4 different layout families.
+- **Bento Cell Count Rule** - N items = exactly N cells; no empty middle or trailing cells.
+- **Page Theme Lock** - one theme (light / dark / auto) for the whole page; no mid-page light/dark flips.
+- **Italic Descender Clearance** - italic display words with `y g j p q` need `leading-[1.1]` minimum and `pb-1` reserve.
+- **Long lists need a different UI component** - `<ul>` + `divide-y` for > 5 items is the lazy default; reach for cards / tabs / marquee / carousel / scroll-snap pills.
+- **Long-list-divider-overuse banned** - no `border-t` + `border-b` on every row.
 
 **Animation discipline**
 
 - Motion library standardised on **Motion** (`motion/react`, the rebrand of Framer Motion). Legacy `framer-motion` package still works as alias.
-- **§5.A GSAP Sticky-Stack** — canonical code skeleton (`start: "top top"`, `pin: true`, `scrub: true`, transform driven by NEXT card's trigger).
-- **§5.B GSAP Horizontal-Pan** — canonical code skeleton (`start: "top top"`, `pin: true`, `end: "+=" + distance`, `scrub: 1`).
-- **§5.C Scroll-Reveal Stagger** — lighter Motion-only pattern using `whileInView`. Use this for simple reveals; save GSAP for actual pinning/scrubbing.
-- **§5.D Forbidden Animation Patterns** — `window.addEventListener('scroll')`, custom scroll calculations in React state, `requestAnimationFrame` loops touching React state. Banned outright.
-- **Reduced motion mandatory** for anything `MOTION_INTENSITY > 3` — wrap in `useReducedMotion()` or `@media (prefers-reduced-motion: reduce)`.
-- **"Motion claimed, motion shown"** — pages claiming `MOTION_INTENSITY > 4` must actually animate; otherwise drop the dial to 3 and ship clean static.
+- **§5.A GSAP Sticky-Stack** - canonical code skeleton (`start: "top top"`, `pin: true`, `scrub: true`, transform driven by NEXT card's trigger).
+- **§5.B GSAP Horizontal-Pan** - canonical code skeleton (`start: "top top"`, `pin: true`, `end: "+=" + distance`, `scrub: 1`).
+- **§5.C Scroll-Reveal Stagger** - lighter Motion-only pattern using `whileInView`. Use this for simple reveals; save GSAP for actual pinning/scrubbing.
+- **§5.D Forbidden Animation Patterns** - `window.addEventListener('scroll')`, custom scroll calculations in React state, `requestAnimationFrame` loops touching React state. Banned outright.
+- **Reduced motion mandatory** for anything `MOTION_INTENSITY > 3` - wrap in `useReducedMotion()` or `@media (prefers-reduced-motion: reduce)`.
+- **"Motion claimed, motion shown"** - pages claiming `MOTION_INTENSITY > 4` must actually animate; otherwise drop the dial to 3 and ship clean static.
 
 **Stack updates**
 
@@ -82,9 +82,9 @@ v2 (experimental) is a substantial rewrite of the original taste-skill. It keeps
 
 ### What's the same
 
-- Three dials (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`) — same spirit, expanded with preset matrix and inference rules.
-- Anti-slop philosophy — same direction, harder enforcement.
-- Performance guardrails — `transform`/`opacity` only, no `top/left/width/height` animation, hardware acceleration.
+- Three dials (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`) - same spirit, expanded with preset matrix and inference rules.
+- Anti-slop philosophy - same direction, harder enforcement.
+- Performance guardrails - `transform`/`opacity` only, no `top/left/width/height` animation, hardware acceleration.
 
 ### Why we made v2 (experimental) the new default
 
@@ -106,6 +106,6 @@ v2 (experimental) is the new default AND it is actively iterating. Refinements m
 
 ---
 
-## v1 — the original taste-skill
+## v1 - the original taste-skill
 
 The original release. Dial-driven philosophy, anti-slop rules, reference vocabulary of pattern names. Preserved at `skills/taste-skill-v1/` and installable as `design-taste-frontend-v1`.

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme-banner.png" alt="Taste Skill — Anti-slop Agent Skills for premium frontends" width="100%" />
+  <img src="assets/readme-banner.png" alt="Taste Skill - Anti-slop Agent Skills for premium frontends" width="100%" />
 </p>
 
 # Taste Skill
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://tasteskill.dev" title="Taste Skill — tasteskill.dev">
+  <a href="https://tasteskill.dev" title="Taste Skill - tasteskill.dev">
     <img src="assets/taste-skill-logo.webp" width="80" height="80" alt="Taste Skill" />
   </a>
 </p>
@@ -67,7 +67,7 @@ The `Install name` column is the exact value you pass to `--skill`.
 
 | Skill (folder) | Install name | Description |
 | --- | --- | --- |
-| **taste-skill** | `design-taste-frontend` | 🆕 **v2 (experimental)** — substantial rewrite of the default skill. Reads the brief, infers the design language, tunes three dials (VARIANCE / MOTION / DENSITY). Brief inference, design-system map, hard em-dash ban, canonical GSAP code skeletons, redesign-audit protocol, strict pre-flight check. Actively iterating toward v2.0.0 stable. |
+| **taste-skill** | `design-taste-frontend` | 🆕 **v2 (experimental)** - substantial rewrite of the default skill. Reads the brief, infers the design language, tunes three dials (VARIANCE / MOTION / DENSITY). Brief inference, design-system map, hard em-dash ban, canonical GSAP code skeletons, redesign-audit protocol, strict pre-flight check. Actively iterating toward v2.0.0 stable. |
 | **taste-skill-v1** | `design-taste-frontend-v1` | The original v1 of taste-skill, preserved for projects depending on its exact behavior. Use only if the v2 default breaks something specific in your workflow. |
 | **gpt-tasteskill** | `gpt-taste` | Stricter variant for GPT/Codex: higher layout variance, stronger GSAP direction, aggressive anti-slop. |
 | **image-to-code-skill** | `image-to-code` | Image-first pipeline: generate site references, analyze them, then implement the frontend to match. |
@@ -90,7 +90,7 @@ These produce design images only (no code). Use with ChatGPT Images, Codex image
 
 ### Which one should I use?
 
-- Start with **taste-skill** for the safest general default. (Now v2 experimental — see what changed in the [CHANGELOG](CHANGELOG.md).)
+- Start with **taste-skill** for the safest general default. (Now v2 experimental - see what changed in the [CHANGELOG](CHANGELOG.md).)
 - If you depend on the exact behavior of the original taste-skill, install **taste-skill-v1** instead. 
 - Use **gpt-taste** when you want the stricter GPT/Codex-oriented rules and motion/layout enforcement. 
 - Use **image-to-code-skill** for image → analyze → code website workflows. 
