@@ -67,8 +67,8 @@ The `Install name` column is the exact value you pass to `--skill`.
 
 | Skill (folder) | Install name | Description |
 | --- | --- | --- |
-| **taste-skill** | `design-taste-frontend` | 🆕 **v1.5** — significantly upgraded default. Reads the brief, infers the design language, tunes three dials (VARIANCE / MOTION / DENSITY). Brief inference, design-system map, hard em-dash ban, canonical GSAP code skeletons, redesign-audit protocol, strict pre-flight check. Actively iterating; minor refinements may land in any v1.5.x release. |
-| **taste-skill-v1** | `design-taste-frontend-v1` | The original v1 of taste-skill, preserved for projects depending on its exact behavior. Use only if the v1.5 default breaks something specific in your workflow. |
+| **taste-skill** | `design-taste-frontend` | 🆕 **v2 (experimental)** — substantial rewrite of the default skill. Reads the brief, infers the design language, tunes three dials (VARIANCE / MOTION / DENSITY). Brief inference, design-system map, hard em-dash ban, canonical GSAP code skeletons, redesign-audit protocol, strict pre-flight check. Actively iterating toward v2.0.0 stable. |
+| **taste-skill-v1** | `design-taste-frontend-v1` | The original v1 of taste-skill, preserved for projects depending on its exact behavior. Use only if the v2 default breaks something specific in your workflow. |
 | **gpt-tasteskill** | `gpt-taste` | Stricter variant for GPT/Codex: higher layout variance, stronger GSAP direction, aggressive anti-slop. |
 | **image-to-code-skill** | `image-to-code` | Image-first pipeline: generate site references, analyze them, then implement the frontend to match. |
 | **redesign-skill** | `redesign-existing-projects` | Existing projects: audit the UI first, then fix layout, spacing, hierarchy, styling. |
@@ -90,7 +90,7 @@ These produce design images only (no code). Use with ChatGPT Images, Codex image
 
 ### Which one should I use?
 
-- Start with **taste-skill** for the safest general default. (Now v1.5 — see what changed in the [CHANGELOG](CHANGELOG.md).)
+- Start with **taste-skill** for the safest general default. (Now v2 experimental — see what changed in the [CHANGELOG](CHANGELOG.md).)
 - If you depend on the exact behavior of the original taste-skill, install **taste-skill-v1** instead. 
 - Use **gpt-taste** when you want the stricter GPT/Codex-oriented rules and motion/layout enforcement. 
 - Use **image-to-code-skill** for image → analyze → code website workflows. 

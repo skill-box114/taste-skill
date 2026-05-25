@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to taste-skill live here. The repo follows SemVer-ish discipline: minor releases may refine rules and add new bans inside an existing skill; major releases may rename install names or restructure the skill set.
+All notable changes to taste-skill live here. The repo follows SemVer-ish discipline: experimental pre-releases iterate freely; stable releases lock the API.
 
 ---
 
@@ -8,16 +8,18 @@ All notable changes to taste-skill live here. The repo follows SemVer-ish discip
 
 ### Repo
 
-- `taste-skill` (install name `design-taste-frontend`) is now **v1.5**. The previous v1 is preserved as `taste-skill-v1` (install name `design-taste-frontend-v1`).
+- `taste-skill` (install name `design-taste-frontend`) is now **v2 (experimental)**. The previous v1 is preserved as `taste-skill-v1` (install name `design-taste-frontend-v1`).
 - New `CHANGELOG.md` (this file).
 
 ---
 
-## v1.5 — the new default for `taste-skill`
+## v2 (experimental) — the new default for `taste-skill`
 
-v1.5 is a substantial rewrite of the original taste-skill. It keeps the dial-driven philosophy (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`) and adds structure, hard rules, and concrete implementation patterns the agent can actually follow.
+v2 (experimental) is a substantial rewrite of the original taste-skill. It keeps the dial-driven philosophy (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`) and adds structure, hard rules, and concrete implementation patterns the agent can actually follow.
 
-### What's new in v1.5
+**This is a pre-release.** It is the new default install because it is genuinely better than v1, but it is still iterating. Refinements may land in any v2 experimental release. The API (install name, dial names, section structure) will stabilize at v2.0.0 stable.
+
+### What's new in v2 (experimental)
 
 **New sections**
 
@@ -29,9 +31,9 @@ v1.5 is a substantial rewrite of the original taste-skill. It keeps the dial-dri
 - **§13 Out of Scope** — explicit list of what taste-skill is NOT for (dashboards, data tables, multi-step forms, code editors, native mobile, realtime collab UIs).
 - **§14 Final Pre-Flight Check** — hard checklist. Every box must honestly pass before shipping.
 
-**Hardened bans (Section 9 — "AI Tells")**
+**Hardened bans (Section 9, "AI Tells")**
 
-- **§9.G Em-Dash Ban (complete)** — zero em-dashes (`—`) anywhere on the page. Headlines, eyebrows, pills, body copy, quotes, attribution, captions, button text, alt text. Use a hyphen (`-`) or restructure the sentence. This was the single most-violated stylistic Tell in pre-1.5 testing.
+- **§9.G Em-Dash Ban (complete)** — zero em-dashes (`—`) anywhere on the page. Headlines, eyebrows, pills, body copy, quotes, attribution, captions, button text, alt text. Use a hyphen (`-`) or restructure the sentence. This was the single most-violated stylistic Tell in pre-v2 testing.
 - Section numbering eyebrows (`00 / INDEX`, `001 · Capabilities`, `06 · how it works`) banned outright.
 - Version labels in hero (`V0.6`, `INVITE-ONLY PREVIEW`, `BETA`) banned unless the brief is explicitly a product launch.
 - Photo-credit captions as decoration (`Field study no. 12 · Ines Caetano`) banned unless real attribution.
@@ -84,11 +86,11 @@ v1.5 is a substantial rewrite of the original taste-skill. It keeps the dial-dri
 - Anti-slop philosophy — same direction, harder enforcement.
 - Performance guardrails — `transform`/`opacity` only, no `top/left/width/height` animation, hardware acceleration.
 
-### Why we made v1.5 the new default
+### Why we made v2 (experimental) the new default
 
-Pre-1.5, the original taste-skill set the right direction but was easy for agents to skim past. Production testing showed the same Tells emerging across builds (em-dash everywhere, section-number eyebrows, "Quietly in use at", decorative dots, fake screenshots out of styled divs, broken GSAP scroll triggers).
+Pre-v2, the original taste-skill set the right direction but was easy for agents to skim past. Production testing showed the same Tells emerging across builds (em-dash everywhere, section-number eyebrows, "Quietly in use at", decorative dots, fake screenshots out of styled divs, broken GSAP scroll triggers).
 
-v1.5 closes those gaps with hard rules, canonical code skeletons, and a pre-flight checklist the agent must run. It is the version we now recommend.
+v2 closes those gaps with hard rules, canonical code skeletons, and a pre-flight checklist the agent must run. It is the version we now recommend.
 
 ### How to pin to v1 if you need it
 
@@ -100,7 +102,7 @@ This installs the original SKILL.md unchanged.
 
 ### Stability note
 
-v1.5 is the new default AND it is actively iterating. Minor refinements may land in any v1.5.x release. Breaking changes (rename of install name, removal of sections) will wait for v2.0.0.
+v2 (experimental) is the new default AND it is actively iterating. Refinements may land in any pre-release while we converge on v2.0.0 stable. Breaking changes (rename of install name, removal of sections) will be batched and called out clearly when v2.0.0 stable cuts.
 
 ---
 
