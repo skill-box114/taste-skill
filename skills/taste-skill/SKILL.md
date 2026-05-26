@@ -165,11 +165,18 @@ LLMs default to clichés. Override these defaults proactively. Each rule has a c
 ### 4.1 Typography
 * **Display / Headlines:** Default `text-4xl md:text-6xl tracking-tighter leading-none`.
 * **Body / Paragraphs:** Default `text-base text-gray-600 leading-relaxed max-w-[65ch]`.
-* **Font choice:**
+* **Sans font choice:**
   * **Discouraged as default:** `Inter`. Pick `Geist`, `Outfit`, `Cabinet Grotesk`, `Satoshi`, or a brand-appropriate serif first.
   * **Override:** Inter is acceptable when the user explicitly asks for a neutral / standard / Linear-style feel, or when the brief is a public-sector / accessibility-first site.
-* **Serif:** allowed for editorial / luxury / publication briefs. Not for technical SaaS dashboards.
 * **Pairings to know:** `Geist` + `Geist Mono`, `Satoshi` + `JetBrains Mono`, `Cabinet Grotesk` + `Inter Tight`, `GT America` + `IBM Plex Mono`.
+
+* **SERIF DISCIPLINE (mandatory, the #1 recurring AI-tell in production tests):**
+  * Serif is allowed for editorial / luxury / publication / premium-consumer / agency-portfolio briefs. Not for technical SaaS dashboards.
+  * **BANNED as default serif:** `Fraunces` and `Instrument_Serif`. These are the two serifs every AI model defaults to for "creative/premium/agency" briefs. Every site you have ever generated with them looks like every other AI-generated site. If you reach for one of these on autopilot, stop.
+  * **Override:** Fraunces or Instrument_Serif are acceptable only when the brand brief explicitly names them, or when the brief specifically asks for the "wide-axis warm display serif" look AND you can name why that fits this specific brand.
+  * **Default serif alternatives (rotate, do not reuse the same one twice across consecutive projects):** PP Editorial New, GT Sectra Display, Cardinal Grotesque, Reckless Neue, Tiempos Headline, Recoleta, Cormorant Garamond, Playfair Display, EB Garamond, IvyPresto, Migra, Editorial Old, Saol Display, Söhne Breit Kursiv, ABC Diatype Semi-Mono, Domaine Display, Canela, Schnyder, Tobias, NB Architekt, ITC Galliard.
+  * **Font-rotation rule:** if the previous project you generated in this workspace used Serif X, this project uses a different Serif Y. Do not ship two consecutive projects with the same serif. If you cannot remember the previous project's serif, default to one outside the Fraunces / Instrument_Serif pair.
+
 * **ITALIC DESCENDER CLEARANCE (mandatory):** When italic is used in display type and the word contains a descender letter (`y g j p q`), `leading-[1]` or `leading-none` will clip the descender. Use `leading-[1.1]` minimum and add `pb-1` or `mb-1` reserve on the wrapping element. Audit every italic word in display headlines before shipping.
 
 ### 4.2 Color Calibration
@@ -178,6 +185,23 @@ LLMs default to clichés. Override these defaults proactively. Each rule has a c
 * **Override:** if the brand or brief explicitly asks for purple / violet / lila, embrace it. But execute with intent: consistent palette, harmonised neutrals, restrained gradients. Not generic AI gradient slop.
 * **One palette per project.** Do not fluctuate between warm and cool grays within the same project.
 * **COLOR CONSISTENCY LOCK (mandatory):** Once an accent color is chosen for a page, it is used on the WHOLE page. A warm-grey site does not suddenly get a blue CTA in section 7. A rose-accented site does not get a teal status badge in the footer. Pick one accent, lock it, audit every component before shipping.
+
+* **PREMIUM-CONSUMER PALETTE BAN (mandatory, second-most-recurring AI-tell):**
+  * For premium-consumer briefs (cookware, wellness, artisan, luxury, heritage craft, DTC home goods, etc.) the LLM default is **warm beige/cream + brass/clay/oxblood/ochre + espresso/ink dark text**. Concretely banned hex families as default backgrounds and accents:
+    - Backgrounds: `#f5f1ea`, `#f7f5f1`, `#fbf8f1`, `#efeae0`, `#ece6db`, `#faf7f1`, `#e8dfcb` (all "warm paper / cream / chalk / bone")
+    - Accents: `#b08947`, `#b6553a`, `#9a2436`, `#9c6e2a`, `#bc7c3a`, `#7d5621` (all "brass / clay / oxblood / ochre")
+    - Text: `#1a1714`, `#1a1814`, `#1b1814` (all "espresso / warm near-black")
+  * This palette is BANNED as the default reach for premium-consumer briefs. Every premium-consumer site you have ever shipped uses this exact palette. The brand becomes invisible.
+  * **Default alternatives (rotate, do not reuse):**
+    - **Cold Luxury:** silver-grey + chrome + smoke (think Tesla, Apple Watch Hermes-without-the-leather)
+    - **Forest:** deep green + bone + amber accent (think Filson, Patagonia premium)
+    - **Black and Tan:** true off-black + warm tan, sharp contrast, no beige
+    - **Cobalt + Cream:** saturated blue against a single neutral, no brass
+    - **Terracotta + Slate:** warm rust against cool grey, no brass
+    - **Olive + Brick + Paper:** muted olive plus brick-red accent
+    - **Pure monochrome + single saturated pop:** off-white + off-black + one bright accent (electric blue, emerald, hot pink, etc.)
+  * **Palette-rotation rule:** if the previous premium-consumer project you generated used the beige+brass family, this one MUST use a different family. Do not ship the same warm-craft palette twice in a row.
+  * **Override:** the beige+brass+espresso palette is acceptable ONLY when the brand brief explicitly names those colors, or when the brand identity is genuinely vintage / artisan / warm-craft AND you can articulate why this specific palette fits this specific brand. Default-reaching for it because "this is a cookware brief" is banned.
 
 ### 4.3 Layout Diversification
 * **ANTI-CENTER BIAS:** Centered Hero / H1 sections are avoided when `DESIGN_VARIANCE > 4`. Force "Split Screen" (50/50), "Left-aligned content / right-aligned asset", "Asymmetric white-space", or scroll-pinned structures.
@@ -195,7 +219,9 @@ LLMs default to "static successful state only." Always implement full cycles:
 * **Empty States:** Beautifully composed; indicate how to populate.
 * **Error States:** Clear, inline (forms), or contextual (toasts only for transient).
 * **Tactile Feedback:** On `:active`, use `-translate-y-[1px]` or `scale-[0.98]` to simulate a physical push.
-* **BUTTON CONTRAST CHECK (mandatory, a11y):** Before shipping any button, verify the button text is readable against the button background. White button + white text, `bg-white` CTA with `text-white` label, transparent button against the page background with no border → all banned. Audit every CTA: contrast ratio WCAG AA min (4.5:1 for body, 3:1 for large text 18px+).
+* **BUTTON CONTRAST CHECK (mandatory, a11y):** Before shipping any button, verify the button text is readable against the button background. White button + white text, `bg-white` CTA with `text-white` label, transparent button against the page background with no border → all banned. Audit every CTA: contrast ratio WCAG AA min (4.5:1 for body, 3:1 for large text 18px+). Same rule applies to ghost buttons over photographic backgrounds (use a backdrop, scrim, or stroke).
+* **CTA BUTTON WRAP BAN (mandatory):** Button text MUST fit on one line at desktop. If a label like "VIEW SELECTED WORK" wraps to 2 or 3 lines, the button is broken. Fix by EITHER shortening the label (3 words max for primary CTAs, ideally 1-2) OR widening the button (do not artificially constrain `max-width` on CTAs). Wrapped CTAs at desktop are a Pre-Flight Fail.
+* **FORM CONTRAST CHECK (mandatory, a11y):** Form inputs, placeholder text, focus rings, helper text, and error text all pass WCAG AA contrast against the section background. Light placeholders on a near-white form, white form on white page section, form labels grayer than 4.5:1 contrast → all banned. Audit every form before shipping.
 
 ### 4.6 Data & Form Patterns
 * Label ABOVE input. Helper text optional but present in markup. Error text BELOW input. Standard `gap-2` for input blocks.
@@ -205,12 +231,21 @@ LLMs default to "static successful state only." Always implement full cycles:
 
 * **Hero MUST fit in the initial viewport.** Headline max 2 lines on desktop, subtext max **20 words** AND max 3-4 lines, CTAs visible without scroll. If the copy is too long: reduce font scale OR cut copy. If you cannot describe the value-prop in 20 words of subtext, the value-prop is unclear, not the rule too tight. Never let the hero overflow and force scroll to find the CTA.
 * **Hero font-scale discipline.** Plan font size and image size *together*. If the hero asset is large and the headline is more than 6 words, do not start at `text-7xl/text-8xl`. Default sensible range: `text-4xl md:text-5xl lg:text-6xl` for most heroes; `text-6xl md:text-7xl` only when the headline is 3-5 words. A 4-line hero headline is always a font-size error, never a copy-length error.
+* **HERO STACK DISCIPLINE (max 4 text elements).** The hero is a single moment, not a feature list. Allowed text elements, max 4 in total:
+  1. Eyebrow (small uppercase label) OR brand strip OR neither - pick zero or one
+  2. Headline (max 2 lines, see above)
+  3. Subtext (max 20 words, max 4 lines)
+  4. CTAs (1 primary + max 1 secondary)
+  - **BANNED in the hero:** tiny tagline below CTAs ("Works with GitHub, GitLab, and self-hosted Git"), trust micro-strip ("Used by engineering teams at..."), pricing teaser ("Free for solo, $10/user for teams"), feature bullet list, social-proof avatar row. All of those move to dedicated sections directly below the hero.
+  - If you have an eyebrow AND a tagline below CTAs in the same hero, drop the tagline. If you have a brand strip AND a tagline, drop the tagline. One small text element per hero, max.
 * **"Used by" / "Trusted by" logo wall belongs UNDER the hero, never inside it.** The hero is for the value prop and primary CTA. The logo wall is a separate section directly below. Do not stuff trust logos into the same flex row as the hero copy.
 * **Navigation MUST render on a single line on desktop.** If items don't fit at `lg` (1024px), condense labels, drop secondary items, or move to a hamburger. A two-line nav at desktop is broken design.
 * **Navigation height cap: 80px max desktop, default 64-72px.** No huge "agency" nav bars that eat 15% of the viewport.
 * **Bento grids MUST have rhythm, not one-sided repetition.** Do not stack 6 left-image / right-text rows. Vary the composition: alternate full-width feature rows, asymmetric tile sizes, vertical breaks.
 * **BENTO CELL COUNT RULE (mandatory):** A bento grid has EXACTLY as many cells as you have content for. 3 items → 3 cells (1+2 split, or 2+1, or asymmetric trio). 5 items → 5 cells (2+3, 3+2, hero+4, etc.). If your grid has an empty cell in the middle or at the end, you planned wrong. Re-shape the grid; do not paste a blank tile.
 * **Section-Layout-Repetition Ban.** Once you use a layout family for a section (e.g., 3-column-image-cards, full-width-quote, split-text-image), that family can appear at most ONCE on the page. "Selected commissions" must not look like "What we do." A landing page with 8 sections must use at least 4 different layout families.
+* **Section Eyebrow Restraint (mandatory).** The pattern "small uppercase tracking caps above the section headline" applied to every single section is an AI-tell. It produces templated rhythm where every section feels announced the same way. Rule: at MOST every other section may use an eyebrow. Hero can have one (hero is special). For the rest, alternate: section with eyebrow, section without, section with, etc. If you find yourself writing `text-[11px] uppercase tracking-[0.18em]` in 6+ components in the same project, you violated this rule.
+* **Bento Background Diversity (mandatory).** Bento and feature-grid sections cannot be 6 white-on-white cards with text inside. At least 2-3 cells in any multi-cell grid need real visual variation: a real image, a brand-appropriate gradient (not AI-purple), a pattern, a tinted background. A cream-on-cream bento with only typography inside reads as boring AI default, even when the rest of the page is good.
 * **Mobile collapse must be explicit per section.** For every multi-column layout, declare the `< 768px` fallback in the same component. No "it'll work, Tailwind handles it" assumptions.
 
 ### 4.8 Image & Visual Asset Strategy
@@ -265,6 +300,11 @@ Landing pages live on the **first impression**, not the full read. Cut ruthlessl
   - Carousel for breadth-heavy lists (testimonials, logos, capabilities)
   - Marquee for "lots-of-things-that-don't-need-individual-attention"
   A spec sheet with 10 rows + a hairline under every row is the WORST default. Either group rows into 2-3 chunks with sparse dividers, or move to a card-per-spec layout.
+* **Spec sheets specifically (the Marrow-cookware pattern).** A long product specification table with `border-b` on every row is the AI default for cookware / hardware / apparel / artisan-goods briefs. Banned. Concrete alternatives:
+  - **2-col card grid:** each spec gets its own card with the spec name, the value (large display number), and a one-line "why it matters" body. Cards arranged 2-col on desktop, 1-col mobile.
+  - **Scroll-snap horizontal pills:** each spec is a pill, user can flick through.
+  - **Grouped chunks:** group 10 specs into 3 logical clusters (e.g. "Materials", "Cooking", "Warranty"), each cluster gets ONE soft divider and a cluster heading.
+  - **Featured-vs-rest:** 3-4 hero specs visualised as large display tiles, the rest collapsed under a "View full specifications" disclosure.
 * **Fake-precise numbers are flagged.** Numbers like `92%`, `4.1×`, `48k`, `5.8 mm`, `13.4 lb` either:
   - Come from real data (brief, brand guidelines, public metrics) - fine
   - Are explicitly labeled as mock (`<!-- mock -->`, "example", "sample data") - fine
@@ -596,9 +636,11 @@ These patterns came out of real LLM-generated landing-page tests. They are the s
 
 **Marketing-copy Tells**
 * **NO "Quietly in use at" / "Quietly trusted by"** social-proof headers. Use natural language: "Trusted by", "Used at", "Customers include", or skip the heading entirely if the logos speak.
+* **NO "From the field" / "Field notes" / "Currently on the bench" / "On our desks" / "Loose plates" style poetic labels** on quote, blog, or sidebar sections. Reads as performative-craftsman. Use plain functional labels ("Testimonials", "Latest writing", "Now working on") or skip the label.
 * **NO "We respect the French ones"-style** mock-humble industry-references in body copy. Cute and AI-y.
 * **NO weather / locale strips** ("LIS 14:23 · 18°C") in headers/footers unless the brief is explicitly about a place / time-zone-distributed studio.
 * **NO micro-meta-sentences under eyebrows.** Sentences like *"Each of these is a feature we ship today, not a roadmap promise. The list will stay short on purpose."* sitting under a section heading are clutter. Eyebrow + Headline + Body is enough.
+* **NO generic step labels.** "Stage 1 / Stage 2 / Stage 3", "Step 1 / Step 2 / Step 3", "Phase 01 / Phase 02 / Phase 03", "Pass One / Pass Two / Pass Three". Banned. The actual step content is the label. If you must show progression, use the verb-noun directly ("Install", "Configure", "Ship") not "Stage 1: Install".
 
 **Pills, labels and version stamps**
 * **NO pills/labels/tags overlaid on images.** No `<span>` overlays on photos with tags like `Brand · 02`, `PLATE · BRAND`, `Field notes - journal`. Either let the image speak alone, or add a caption directly below (outside the image).
@@ -859,9 +901,16 @@ Run this matrix before outputting code. This is the last filter.
 - [ ] **Color Consistency Lock**: one accent color used identically across all sections (Section 4.2)?
 - [ ] **Shape Consistency Lock**: one corner-radius system applied consistently (Section 4.4)?
 - [ ] **Button Contrast Check**: every CTA text is readable against its background (no white-on-white, WCAG AA 4.5:1)?
+- [ ] **CTA Button Wrap**: no CTA label wraps to 2+ lines at desktop?
+- [ ] **Form Contrast Check**: form inputs, placeholders, focus rings, labels all pass WCAG AA against the section background?
+- [ ] **Serif discipline**: if a serif is used, it is NOT Fraunces or Instrument_Serif (or it is, with explicit brand justification)? Different serif from your previous project?
+- [ ] **Premium-consumer palette check**: if the brief is premium-consumer (cookware / wellness / artisan / luxury), the palette is NOT the AI-default beige+brass+oxblood+espresso family? Different family from your previous premium-consumer project?
 - [ ] **Italic descender clearance**: every italic word with `y g j p q` has `leading-[1.1]` min + `pb-1` reserve?
 - [ ] **Hero fits the viewport**: headline ≤ 2 lines, subtext ≤ 20 words AND ≤ 4 lines, CTA visible without scroll, font scale planned around image?
-- [ ] **"Used by / Trusted by" logo wall** lives UNDER the hero, not inside it, uses REAL SVG logos (Simple Icons / devicon) or generated SVG marks - NOT plain text wordmarks?
+- [ ] **Hero stack discipline**: max 4 text elements in hero (eyebrow OR brand strip, headline, subtext, CTAs)? No tiny tagline below CTAs, no trust micro-strip in hero?
+- [ ] **Section Eyebrow Restraint**: not every section has an eyebrow (max half of sections), no "small uppercase tracking caps" repeated 6+ times?
+- [ ] **Bento Background Diversity**: at least 2-3 bento cells have real visual variation (image, gradient, pattern), not all white-on-white text cards?
+- [ ] **"Used by / Trusted by" logo wall** lives UNDER the hero, not inside it, uses REAL SVG logos (Simple Icons / devicon) or generated SVG marks, NOT plain text wordmarks?
 - [ ] **Navigation on ONE line** at desktop, height ≤ 80px?
 - [ ] **Section-Layout-Repetition** check: no two sections share the same layout family (at least 4 different families across 8 sections)?
 - [ ] **Bento has rhythm AND exact cell count** (N items → N cells, no empty cells in middle or at end)?
