@@ -9,8 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://tasteskill.dev">
-    <img src="https://img.shields.io/badge/tasteskill.dev-000000?style=for-the-badge&labelColor=0a0a0a&color=171717&logo=https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/assets/taste-skill-logo.webp" alt="Visit tasteskill.dev" />
+  <a href="https://tasteskill.dev" title="Visit tasteskill.dev">
+    <img src="assets/taste-skill-logo.png" alt="" width="52" height="52" valign="middle" />
+    <img src="https://img.shields.io/badge/tasteskill.dev-000000?style=for-the-badge&labelColor=0a0a0a&color=171717" alt="tasteskill.dev" height="56" valign="middle" />
   </a>
 </p>
 
