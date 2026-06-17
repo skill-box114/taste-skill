@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="48" viewBox="0 0 260 48" role="img" aria-label="Visit tasteskill.dev">
+  <defs>
+    <linearGradient id="cta-bg" x1="0" y1="0" x2="260" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="48" rx="12" fill="url(#cta-bg)"/>
+  <rect x="1" y="1" width="258" height="46" rx="11" fill="none" stroke="#ffffff" stroke-opacity="0.18"/>
+  <text x="130" y="30" text-anchor="middle" fill="#ffffff" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="600" letter-spacing="0.02em">Visit tasteskill.dev</text>
+</svg>
