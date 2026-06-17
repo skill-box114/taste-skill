@@ -20,6 +20,12 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://vercel.com/open-source-program">
+    <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" />
+  </a>
+</p>
+
 Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.
 
 <p align="center">
