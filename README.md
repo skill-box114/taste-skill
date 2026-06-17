@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <sub><a href="#support-the-project">Become a sponsor</a></sub>
+  <sub><a href="https://github.com/sponsors/Leonxlnx">Become a sponsor</a></sub>
 </p>
 
 <br />
