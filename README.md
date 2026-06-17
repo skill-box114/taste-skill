@@ -8,15 +8,13 @@
   <em>The Anti-Slop Frontend Framework for AI Agents</em>
 </p>
 
-<p align="center">
+<p align="center" style="margin-bottom: 8px;">
   <a href="https://tasteskill.dev" title="Visit tasteskill.dev">
     <img src="assets/readme-buttons/btn-site.png" alt="Visit tasteskill.dev" height="56" />
   </a>
 </p>
 
-<br />
-
-<h3 align="center">Sponsors</h3>
+<h3 align="center" style="margin-top: 0;">Sponsors</h3>
 
 <p align="center">
   <a href="https://vercel.com/open-source-program">
@@ -33,13 +31,13 @@
 Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.
 
 <p align="center">
-  <a href="LICENSE"><img src="assets/readme-buttons/btn-mit.png" alt="MIT License" height="36" /></a>
+  <a href="LICENSE"><img src="assets/readme-buttons/btn-mit.png" alt="MIT License" height="45" /></a>
   &nbsp;
-  <a href="https://github.com/vercel-labs/agent-skills"><img src="assets/readme-buttons/btn-agent-skills.png" alt="Agent Skills compatible" height="36" /></a>
+  <a href="https://github.com/vercel-labs/agent-skills"><img src="assets/readme-buttons/btn-agent-skills.png" alt="Agent Skills compatible" height="45" /></a>
   &nbsp;
-  <a href="#installing"><img src="assets/readme-buttons/btn-tools.png" alt="Codex, Cursor, Claude" height="36" /></a>
+  <a href="#installing"><img src="assets/readme-buttons/btn-tools.png" alt="Codex, Cursor, Claude" height="48" /></a>
   &nbsp;
-  <a href="https://www.tasteskill.dev/changelog"><img src="assets/readme-buttons/btn-changelog.png" alt="Changelog" height="36" /></a>
+  <a href="https://www.tasteskill.dev/changelog"><img src="assets/readme-buttons/btn-changelog.png" alt="Changelog" height="45" /></a>
 </p>
 
 ## Disclaimer
