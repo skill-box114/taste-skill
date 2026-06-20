@@ -14,7 +14,15 @@
 
 <h3 align="center">Sponsors</h3>
 
-<p align="center"><a href="https://animations.dev"><img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="62" height="62" /></a>&nbsp;&nbsp;&nbsp;<sub><a href="https://animations.dev"><strong>Emil Kowalski</strong></a> · <a href="https://animations.dev">animations.dev</a></sub></p>
+<p align="center">
+  <table align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td valign="middle"><a href="https://animations.dev"><img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="62" height="62" /></a></td>
+      <td valign="middle">&nbsp;&nbsp;&nbsp;</td>
+      <td valign="middle"><sub><a href="https://github.com/emilkowalski"><strong>Emil Kowalski</strong></a> · <a href="https://animations.dev">animations.dev</a></sub></td>
+    </tr>
+  </table>
+</p>
 
 <p align="center"><a href="https://vercel.com/open-source-program"><img alt="Vercel OSS Program" src="assets/vercel-oss-program-badge.svg" height="24" /></a></p>
 
