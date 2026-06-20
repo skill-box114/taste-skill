@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme-banner.png" alt="Taste Skill - Anti-slop Agent Skills for premium frontends" width="100%" />
+  <img src="assets/readme-banner.webp" alt="Taste Skill - Anti-slop Agent Skills for premium frontends" width="100%" />
 </p>
 
 # Taste Skill
@@ -10,7 +10,7 @@
 
 <p align="center" style="margin-bottom: 8px;">
   <a href="https://tasteskill.dev" title="Visit tasteskill.dev">
-    <img src="assets/readme-buttons/btn-site.png" alt="Visit tasteskill.dev" height="56" />
+    <img src="assets/readme-buttons/btn-site.webp" alt="Visit tasteskill.dev" height="56" />
   </a>
 </p>
 
@@ -18,8 +18,8 @@
 
 <p align="center">
   <a href="https://animations.dev" title="Emil Kowalski · animations.dev">
-    <img src="assets/sponsors/animations-dev.png" alt="" width="38" height="38" valign="middle" style="border-radius: 10px;" />
-    <img src="assets/sponsors/emil-animations-dev.png" alt="Emil Kowalski · animations.dev" height="38" valign="middle" />
+    <img src="assets/sponsors/animations-dev.webp" alt="" width="96" height="96" valign="middle" style="border-radius: 12px;" />
+    <img src="assets/sponsors/emil-animations-dev.webp" alt="Emil Kowalski · animations.dev" height="96" valign="middle" />
   </a>
 </p>
 
@@ -38,13 +38,13 @@
 Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.
 
 <p align="center">
-  <a href="LICENSE"><img src="assets/readme-buttons/btn-mit.png" alt="MIT License" height="45" valign="middle" /></a>
+  <a href="LICENSE"><img src="assets/readme-buttons/btn-mit.webp" alt="MIT License" height="45" valign="middle" /></a>
   &nbsp;
-  <a href="https://github.com/vercel-labs/agent-skills"><img src="assets/readme-buttons/btn-agent-skills.png" alt="Agent Skills compatible" height="45" valign="middle" /></a>
+  <a href="https://github.com/vercel-labs/agent-skills"><img src="assets/readme-buttons/btn-agent-skills.webp" alt="Agent Skills compatible" height="45" valign="middle" /></a>
   &nbsp;
-  <a href="#installing"><img src="assets/readme-buttons/btn-tools.png" alt="Codex, Cursor, Claude" height="45" valign="middle" /></a>
+  <a href="#installing"><img src="assets/readme-buttons/btn-tools.webp" alt="Codex, Cursor, Claude" height="45" valign="middle" /></a>
   &nbsp;
-  <a href="https://www.tasteskill.dev/changelog"><img src="assets/readme-buttons/btn-changelog.png" alt="Changelog" height="45" valign="middle" /></a>
+  <a href="https://www.tasteskill.dev/changelog"><img src="assets/readme-buttons/btn-changelog.webp" alt="Changelog" height="45" valign="middle" /></a>
 </p>
 
 ## Disclaimer
@@ -168,7 +168,7 @@ If Taste Skill helps you, consider sponsoring:
 
 ### Current Sponsors
 
-<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.png" width="40" height="40" style="border-radius:10px" alt="Emil Kowalski" title="Emil Kowalski · animations.dev" /></a>
+<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.webp" width="96" height="96" style="border-radius:12px" alt="Emil Kowalski" title="Emil Kowalski · animations.dev" /></a>
 <a href="https://github.com/dnakov"><img src="https://github.com/dnakov.png" width="40" height="40" style="border-radius:50%" alt="dnakov" title="dnakov" /></a>
 <a href="https://github.com/AkramReshad"><img src="https://github.com/AkramReshad.png" width="40" height="40" style="border-radius:50%" alt="AkramReshad" title="AkramReshad" /></a>
 <a href="https://github.com/ajmalaksar25"><img src="https://github.com/ajmalaksar25.png" width="40" height="40" style="border-radius:50%" alt="ajmalaksar25" title="ajmalaksar25" /></a>
