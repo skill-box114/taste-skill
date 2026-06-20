@@ -17,6 +17,14 @@
 <h3 align="center" style="margin-top: 0;">Sponsors</h3>
 
 <p align="center">
+  <a href="https://animations.dev" title="animations.dev by Emil Kowalski">
+    <img src="assets/sponsors/animations-dev.png" alt="animations.dev" width="40" height="40" style="border-radius: 10px; vertical-align: middle;" />
+  </a>
+  &nbsp;
+  <sub><a href="https://animations.dev"><strong>Emil Kowalski</strong></a> · <a href="https://animations.dev">animations.dev</a></sub>
+</p>
+
+<p align="center">
   <a href="https://vercel.com/open-source-program">
     <img alt="Vercel OSS Program" src="assets/vercel-oss-program-badge.svg" height="24" />
   </a>
@@ -161,6 +169,7 @@ If Taste Skill helps you, consider sponsoring:
 
 ### Current Sponsors
 
+<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.png" width="40" height="40" style="border-radius:10px" alt="Emil Kowalski" title="Emil Kowalski · animations.dev" /></a>
 <a href="https://github.com/dnakov"><img src="https://github.com/dnakov.png" width="40" height="40" style="border-radius:50%" alt="dnakov" title="dnakov" /></a>
 <a href="https://github.com/AkramReshad"><img src="https://github.com/AkramReshad.png" width="40" height="40" style="border-radius:50%" alt="AkramReshad" title="AkramReshad" /></a>
 <a href="https://github.com/ajmalaksar25"><img src="https://github.com/ajmalaksar25.png" width="40" height="40" style="border-radius:50%" alt="ajmalaksar25" title="ajmalaksar25" /></a>
