@@ -14,22 +14,14 @@
   </a>
 </p>
 
-<h3 align="center" style="margin-top: 0;">Sponsors</h3>
+<h3 align="center">Sponsors</h3>
 
 <p align="center">
-  <a href="https://animations.dev" title="Emil Kowalski · animations.dev">
-    <img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="77" height="77" valign="middle" style="border-radius: 12px;" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://animations.dev" title="Emil Kowalski · animations.dev">
-    <img src="assets/sponsors/emil-animations-dev.webp" alt="Emil Kowalski · animations.dev" height="144" valign="middle" />
-  </a>
+  <a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="77" height="77" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/emil-animations-dev.webp" alt="Emil Kowalski · animations.dev" height="72" /></a>
 </p>
 
 <p align="center">
-  <a href="https://vercel.com/open-source-program">
-    <img alt="Vercel OSS Program" src="assets/vercel-oss-program-badge.svg" height="24" />
-  </a>
+  <a href="https://vercel.com/open-source-program"><img alt="Vercel OSS Program" src="assets/vercel-oss-program-badge.svg" height="24" /></a>
 </p>
 
 <p align="center">
