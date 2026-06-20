@@ -18,8 +18,11 @@
 
 <p align="center">
   <a href="https://animations.dev" title="Emil Kowalski · animations.dev">
-    <img src="assets/sponsors/animations-dev.webp" alt="" width="96" height="96" valign="middle" style="border-radius: 12px;" />
-    <img src="assets/sponsors/emil-animations-dev.webp" alt="Emil Kowalski · animations.dev" height="96" valign="middle" />
+    <img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="77" height="77" valign="middle" style="border-radius: 12px;" />
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://animations.dev" title="Emil Kowalski · animations.dev">
+    <img src="assets/sponsors/emil-animations-dev.webp" alt="Emil Kowalski · animations.dev" height="144" valign="middle" />
   </a>
 </p>
 
@@ -168,7 +171,7 @@ If Taste Skill helps you, consider sponsoring:
 
 ### Current Sponsors
 
-<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.webp" width="96" height="96" style="border-radius:12px" alt="Emil Kowalski" title="Emil Kowalski · animations.dev" /></a>
+<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.webp" width="77" height="77" style="border-radius:12px" alt="Emil Kowalski" title="Emil Kowalski · animations.dev" /></a>
 <a href="https://github.com/dnakov"><img src="https://github.com/dnakov.png" width="40" height="40" style="border-radius:50%" alt="dnakov" title="dnakov" /></a>
 <a href="https://github.com/AkramReshad"><img src="https://github.com/AkramReshad.png" width="40" height="40" style="border-radius:50%" alt="AkramReshad" title="AkramReshad" /></a>
 <a href="https://github.com/ajmalaksar25"><img src="https://github.com/ajmalaksar25.png" width="40" height="40" style="border-radius:50%" alt="ajmalaksar25" title="ajmalaksar25" /></a>
