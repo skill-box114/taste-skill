@@ -14,19 +14,9 @@
 
 <h3 align="center">Sponsors</h3>
 
-<p align="center">
-  <a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/emil-sponsor-row.webp" alt="Emil Kowalski · animations.dev" height="126" /></a>
-</p>
+<p align="center"><a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/emil-sponsor-row.webp" alt="Emil Kowalski · animations.dev" height="126" /></a></p>
 
-<p align="center">
-  <a href="https://vercel.com/open-source-program"><img alt="Vercel OSS Program" src="assets/vercel-oss-program-badge.svg" height="24" /></a>
-</p>
-
-<p align="center">
-  <sub><a href="https://github.com/sponsors/Leonxlnx">Become a sponsor</a></sub>
-</p>
-
-<br />
+<p align="center"><sub><a href="https://vercel.com/open-source-program">Vercel Open Source Program</a> · <a href="https://github.com/sponsors/Leonxlnx">Become a sponsor</a></sub></p>
 
 Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.
 
