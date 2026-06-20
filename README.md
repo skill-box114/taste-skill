@@ -17,11 +17,10 @@
 <h3 align="center" style="margin-top: 0;">Sponsors</h3>
 
 <p align="center">
-  <a href="https://animations.dev" title="animations.dev by Emil Kowalski">
-    <img src="assets/sponsors/animations-dev.png" alt="animations.dev" width="40" height="40" style="border-radius: 10px; vertical-align: middle;" />
+  <a href="https://animations.dev" title="Emil Kowalski · animations.dev">
+    <img src="assets/sponsors/animations-dev.png" alt="" width="38" height="38" valign="middle" style="border-radius: 10px;" />
+    <img src="assets/sponsors/emil-animations-dev.png" alt="Emil Kowalski · animations.dev" height="38" valign="middle" />
   </a>
-  &nbsp;
-  <sub><a href="https://animations.dev"><strong>Emil Kowalski</strong></a> · <a href="https://animations.dev">animations.dev</a></sub>
 </p>
 
 <p align="center">
