@@ -9,15 +9,13 @@
 </p>
 
 <p align="center" style="margin-bottom: 8px;">
-  <a href="https://tasteskill.dev" title="Visit tasteskill.dev">
-    <img src="assets/readme-buttons/btn-site.webp" alt="Visit tasteskill.dev" height="56" />
-  </a>
+  <a href="https://tasteskill.dev" title="Visit tasteskill.dev"><img src="assets/readme-buttons/btn-site.webp" alt="Visit tasteskill.dev" height="56" /></a>
 </p>
 
 <h3 align="center">Sponsors</h3>
 
 <p align="center">
-  <a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="62" height="62" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/emil-animations-dev.webp" alt="Emil Kowalski · animations.dev" height="126" /></a>
+  <a href="https://animations.dev" title="Emil Kowalski · animations.dev"><img src="assets/sponsors/emil-sponsor-row.webp" alt="Emil Kowalski · animations.dev" height="126" /></a>
 </p>
 
 <p align="center">
