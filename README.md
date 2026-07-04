@@ -21,7 +21,7 @@
   </tr>
   <tr>
     <td align="center" width="76"><a href="https://vercel.com/open-source-program"><img src="assets/sponsors/vercel-logo.svg" alt="Vercel" width="62" height="62" /></a></td>
-    <td><sub><a href="https://vercel.com/open-source-program"><strong>Vercel Open Source Program</strong></a></sub></td>
+    <td><a href="https://vercel.com/open-source-program"><img src="assets/vercel-oss-program-badge.svg" alt="Vercel Open Source Program" height="32" /></a></td>
   </tr>
 </table>
 
