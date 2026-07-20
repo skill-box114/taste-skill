@@ -16,6 +16,13 @@
 
 <table align="center">
   <tr>
+    <td align="center" width="76"><picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://kimi-file.moonshot.cn/prod-chat-kimi/kfs/4/1/2026-06-05/1d8h69mt3v89kkekg24gg" />
+      <img src="https://kimi-file.moonshot.cn/prod-chat-kimi/kfs/4/1/2026-06-05/1d8h69fudcmosb3pipls0" alt="Kimi Open Source Friends" width="62" />
+    </picture></td>
+    <td><sub><strong>Kimi</strong> · Open Source Friends</sub></td>
+  </tr>
+  <tr>
     <td align="center" width="76"><a href="https://img.ly/"><img src="assets/sponsors/imgly-logo.svg" alt="IMG.LY" width="62" height="62" /></a></td>
     <td><sub><a href="https://img.ly/"><strong>IMG.LY</strong></a> · CreativeEditor SDK</sub></td>
   </tr>
