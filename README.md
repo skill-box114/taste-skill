@@ -15,6 +15,14 @@
 <h3 align="center">Sponsors</h3>
 
 <p align="center">
+  <a href="https://novamira.ai/">
+    <img src="https://github.com/use-novamira.png" alt="Novamira" width="220" />
+  </a>
+  <br />
+  <sub><a href="https://novamira.ai/"><strong>Novamira</strong></a> · Full WordPress access for AI agents</sub>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://kimi-file.moonshot.cn/prod-chat-kimi/kfs/4/1/2026-06-05/1d8h69mt3v89kkekg24gg" />
     <img alt="Kimi Open Source Friends" src="https://kimi-file.moonshot.cn/prod-chat-kimi/kfs/4/1/2026-06-05/1d8h69fudcmosb3pipls0" width="420" />
@@ -22,6 +30,10 @@
 </p>
 
 <table align="center">
+  <tr>
+    <td align="center" width="76"><a href="https://github.com/eraybasar"><img src="https://github.com/eraybasar.png" alt="Eray" width="62" height="62" /></a></td>
+    <td><sub><a href="https://github.com/eraybasar"><strong>Eray</strong></a> · supporting Taste Skill</sub></td>
+  </tr>
   <tr>
     <td align="center" width="76"><a href="https://img.ly/"><img src="assets/sponsors/imgly-logo.svg" alt="IMG.LY" width="62" height="62" /></a></td>
     <td><sub><a href="https://img.ly/"><strong>IMG.LY</strong></a> · CreativeEditor SDK</sub></td>
