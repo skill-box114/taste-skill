@@ -16,22 +16,22 @@
 
 <table align="center">
   <tr>
-    <td colspan="2"><strong>🥇 Gold Sponsors</strong></td>
+    <td colspan="2"><strong>Gold Sponsors</strong></td>
   </tr>
   <tr>
-    <td align="center" width="120"><a href="https://novamira.ai/"><img src="https://github.com/use-novamira.png" alt="Novamira" width="62" height="62" /></a></td>
+    <td align="center" width="120"><a href="https://novamira.ai/"><img src="https://github.com/use-novamira.png" alt="Novamira" width="82" height="82" /></a></td>
     <td><sub><a href="https://novamira.ai/"><strong>Novamira</strong></a> · Full WordPress access for AI agents</sub></td>
   </tr>
   <tr>
-    <td colspan="2"><strong>🥈 Silver Sponsors</strong></td>
+    <td colspan="2"><strong>Silver Sponsors</strong></td>
   </tr>
   <tr>
-    <td colspan="2"><strong>🥉 Bronze Sponsors</strong></td>
+    <td colspan="2"><strong>Bronze Sponsors</strong></td>
   </tr>
   <tr>
     <td align="center" width="120">
       <a href="https://interfaces.dev">
-        <img src="https://ho1jr3x2dcwdu3t5.public.blob.vercel-storage.com/interfaces-og-image.png" alt="Interfaces" width="112" />
+        <img src="assets/sponsors/interfaces-dev-icon.webp" alt="Interfaces" width="82" height="82" />
       </a>
     </td>
     <td><sub><a href="https://interfaces.dev"><strong>interfaces.dev</strong></a> · the design engineering magazine</sub></td>
@@ -40,27 +40,27 @@
     <td align="center" width="120">
       <a href="https://reactbits.dev">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/sponsors/reactbits-logo-dark.svg" />
-          <img src="assets/sponsors/reactbits-logo-light.svg" alt="React Bits" width="112" />
+          <source media="(prefers-color-scheme: dark)" srcset="assets/sponsors/reactbits-icon-dark.svg" />
+          <img src="assets/sponsors/reactbits-icon-light.svg" alt="React Bits" width="82" height="82" />
         </picture>
       </a>
     </td>
     <td><sub><a href="https://reactbits.dev"><strong>React Bits</strong></a> · animated React components for creative interfaces</sub></td>
   </tr>
   <tr>
-    <td align="center" width="120"><a href="https://animations.dev"><img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="62" height="62" /></a></td>
+    <td align="center" width="120"><a href="https://animations.dev"><img src="assets/sponsors/animations-dev.webp" alt="animations.dev" width="82" height="82" /></a></td>
     <td><sub><a href="https://github.com/emilkowalski"><strong>Emil Kowalski</strong></a> · <a href="https://animations.dev">animations.dev</a></sub></td>
   </tr>
   <tr>
-    <td align="center" width="120"><a href="https://img.ly/"><img src="assets/sponsors/imgly-logo.svg" alt="IMG.LY" width="62" height="62" /></a></td>
+    <td align="center" width="120"><a href="https://img.ly/"><img src="assets/sponsors/imgly-logo.svg" alt="IMG.LY" width="82" height="82" /></a></td>
     <td><sub><a href="https://img.ly/"><strong>IMG.LY</strong></a> · CreativeEditor SDK</sub></td>
   </tr>
   <tr>
-    <td align="center" width="120"><a href="https://www.sent.dm"><img src="assets/sponsors/sentdm.png" alt="Sent.dm" width="62" height="62" /></a></td>
+    <td align="center" width="120"><a href="https://www.sent.dm"><img src="assets/sponsors/sentdm.png" alt="Sent.dm" width="82" height="82" /></a></td>
     <td><sub><a href="https://www.sent.dm"><strong>Sent.dm</strong></a> · messaging APIs for SMS, WhatsApp, and RCS</sub></td>
   </tr>
   <tr>
-    <td align="center" width="120"><a href="https://www.kimi.com"><img src="https://raw.githubusercontent.com/MoonshotAI/Kimi-K2/main/figures/kimi-logo.png" alt="Kimi" width="62" /></a></td>
+    <td align="center" width="120"><a href="https://www.kimi.com"><img src="assets/sponsors/kimi-icon.png" alt="Kimi" width="82" height="82" /></a></td>
     <td>
       <a href="https://www.kimi.com">
         <picture>
@@ -71,7 +71,7 @@
     </td>
   </tr>
   <tr>
-    <td align="center" width="120"><a href="https://vercel.com/open-source-program"><img src="assets/sponsors/vercel-logo.svg" alt="Vercel" width="62" height="62" /></a></td>
+    <td align="center" width="120"><a href="https://vercel.com/open-source-program"><img src="assets/sponsors/vercel-logo.svg" alt="Vercel" width="82" height="82" /></a></td>
     <td><a href="https://vercel.com/open-source-program"><img src="assets/vercel-oss-program-badge.svg" alt="Vercel Open Source Program" height="32" /></a></td>
   </tr>
 </table>
